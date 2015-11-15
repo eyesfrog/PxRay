@@ -12,7 +12,7 @@
 #include <vector>
 #include <math.h>
 
-#include "Math.h"
+#include "math.h"
 #include "../Utilities/Point2D.h"
 #include "../Utilities/Point3D.h"
 

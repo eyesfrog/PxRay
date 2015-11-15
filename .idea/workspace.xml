@@ -12,11 +12,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103883e6-c929-4a23-8334-875fb1ed46d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/World/ViewPlane.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/World/ViewPlane.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/World/World.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/World/World.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/BRDF.cpp" afterPath="$PROJECT_DIR$/src/BRDF/BRDF.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/BRDF.h" afterPath="$PROJECT_DIR$/src/BRDF/BRDF.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/GlossySpecular.cpp" afterPath="$PROJECT_DIR$/src/BRDF/GlossySpecular.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/GlossySpecular.h" afterPath="$PROJECT_DIR$/src/BRDF/GlossySpecular.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/Lambertian.cpp" afterPath="$PROJECT_DIR$/src/BRDF/Lambertian.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/Lambertian.h" afterPath="$PROJECT_DIR$/src/BRDF/Lambertian.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/PerfectSpecular.cpp" afterPath="$PROJECT_DIR$/src/BRDF/PerfectSpecular.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BRDF/PerfectSpecular.h" afterPath="$PROJECT_DIR$/src/BRDF/PerfectSpecular.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Camera.cpp" afterPath="$PROJECT_DIR$/src/Camera/Camera.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Camera.h" afterPath="$PROJECT_DIR$/src/Camera/Camera.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Fisheye.cpp" afterPath="$PROJECT_DIR$/src/Camera/Fisheye.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Fisheye.h" afterPath="$PROJECT_DIR$/src/Camera/Fisheye.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Pinhole.cpp" afterPath="$PROJECT_DIR$/src/Camera/Pinhole.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Camera/Pinhole.h" afterPath="$PROJECT_DIR$/src/Camera/Pinhole.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/GeometricObject.cpp" afterPath="$PROJECT_DIR$/src/GeometricObjects/GeometricObject.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/GeometricObject.h" afterPath="$PROJECT_DIR$/src/GeometricObjects/GeometricObject.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Plane.cpp" afterPath="$PROJECT_DIR$/src/GeometricObjects/Plane.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Plane.h" afterPath="$PROJECT_DIR$/src/GeometricObjects/Plane.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Rectangle.cpp" afterPath="$PROJECT_DIR$/src/GeometricObjects/Rectangle.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Rectangle.h" afterPath="$PROJECT_DIR$/src/GeometricObjects/Rectangle.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Sphere.cpp" afterPath="$PROJECT_DIR$/src/GeometricObjects/Sphere.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GeometricObjects/Sphere.h" afterPath="$PROJECT_DIR$/src/GeometricObjects/Sphere.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Ambient.cpp" afterPath="$PROJECT_DIR$/src/Lights/Ambient.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Ambient.h" afterPath="$PROJECT_DIR$/src/Lights/Ambient.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Directional.cpp" afterPath="$PROJECT_DIR$/src/Lights/Directional.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Directional.h" afterPath="$PROJECT_DIR$/src/Lights/Directional.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Light.cpp" afterPath="$PROJECT_DIR$/src/Lights/Light.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/Light.h" afterPath="$PROJECT_DIR$/src/Lights/Light.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/PointLight.cpp" afterPath="$PROJECT_DIR$/src/Lights/PointLight.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Lights/PointLight.h" afterPath="$PROJECT_DIR$/src/Lights/PointLight.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Material.cpp" afterPath="$PROJECT_DIR$/src/Materials/Material.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Material.h" afterPath="$PROJECT_DIR$/src/Materials/Material.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Matte.cpp" afterPath="$PROJECT_DIR$/src/Materials/Matte.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Matte.h" afterPath="$PROJECT_DIR$/src/Materials/Matte.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Phong.cpp" afterPath="$PROJECT_DIR$/src/Materials/Phong.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Phong.h" afterPath="$PROJECT_DIR$/src/Materials/Phong.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Reflective.cpp" afterPath="$PROJECT_DIR$/src/Materials/Reflective.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/Reflective.h" afterPath="$PROJECT_DIR$/src/Materials/Reflective.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/MultiJittered.cpp" afterPath="$PROJECT_DIR$/src/Sampler/MultiJittered.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/MultiJittered.h" afterPath="$PROJECT_DIR$/src/Sampler/MultiJittered.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/Regular.cpp" afterPath="$PROJECT_DIR$/src/Sampler/Regular.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/Regular.h" afterPath="$PROJECT_DIR$/src/Sampler/Regular.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/Sampler.cpp" afterPath="$PROJECT_DIR$/src/Sampler/Sampler.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Sampler/Sampler.h" afterPath="$PROJECT_DIR$/src/Sampler/Sampler.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/MultipleObjects.cpp" afterPath="$PROJECT_DIR$/src/Tracer/MultipleObjects.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/MultipleObjects.h" afterPath="$PROJECT_DIR$/src/Tracer/MultipleObjects.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/RayCast.cpp" afterPath="$PROJECT_DIR$/src/Tracer/RayCast.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/RayCast.h" afterPath="$PROJECT_DIR$/src/Tracer/RayCast.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/SingleSphere.cpp" afterPath="$PROJECT_DIR$/src/Tracer/SingleSphere.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/SingleSphere.h" afterPath="$PROJECT_DIR$/src/Tracer/SingleSphere.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/Tracer.cpp" afterPath="$PROJECT_DIR$/src/Tracer/Tracer.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/Tracer.h" afterPath="$PROJECT_DIR$/src/Tracer/Tracer.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/Whitted.cpp" afterPath="$PROJECT_DIR$/src/Tracer/Whitted.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Tracer/Whitted.h" afterPath="$PROJECT_DIR$/src/Tracer/Whitted.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/BBox.cpp" afterPath="$PROJECT_DIR$/src/Utilities/BBox.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/BBox.h" afterPath="$PROJECT_DIR$/src/Utilities/BBox.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Constants.h" afterPath="$PROJECT_DIR$/src/Utilities/Constants.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Math.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Math.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Math.h" afterPath="$PROJECT_DIR$/src/Utilities/Math.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Matrix.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Matrix.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Matrix.h" afterPath="$PROJECT_DIR$/src/Utilities/Matrix.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Normal.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Normal.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Normal.h" afterPath="$PROJECT_DIR$/src/Utilities/Normal.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Point2D.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Point2D.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Point2D.h" afterPath="$PROJECT_DIR$/src/Utilities/Point2D.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Point3D.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Point3D.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Point3D.h" afterPath="$PROJECT_DIR$/src/Utilities/Point3D.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/RGBColor.cpp" afterPath="$PROJECT_DIR$/src/Utilities/RGBColor.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/RGBColor.h" afterPath="$PROJECT_DIR$/src/Utilities/RGBColor.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Ray.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Ray.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Ray.h" afterPath="$PROJECT_DIR$/src/Utilities/Ray.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/ShadeRec.cpp" afterPath="$PROJECT_DIR$/src/Utilities/ShadeRec.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/ShadeRec.h" afterPath="$PROJECT_DIR$/src/Utilities/ShadeRec.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Vector3D.cpp" afterPath="$PROJECT_DIR$/src/Utilities/Vector3D.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utilities/Vector3D.h" afterPath="$PROJECT_DIR$/src/Utilities/Vector3D.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/World/ViewPlane.cpp" afterPath="$PROJECT_DIR$/src/World/ViewPlane.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/World/ViewPlane.h" afterPath="$PROJECT_DIR$/src/World/ViewPlane.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/World/World.cpp" afterPath="$PROJECT_DIR$/src/World/World.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/World/World.h" afterPath="$PROJECT_DIR$/src/World/World.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="TinyRay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,20 +115,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="BRDF.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/BRDF.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lambertian.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/Lambertian.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lambertian.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/Lambertian.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlossySpecular.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/GlossySpecular.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerfectSpecular.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/PerfectSpecular.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlossySpecular.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/GlossySpecular.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <marker date="1447576236000" expanded="true" signature="413:453" placeholder="{...}" />
+                <marker date="1447576236000" expanded="true" signature="518:586" placeholder="{...}" />
+                <marker date="1447576236000" expanded="true" signature="661:757" placeholder="{...}" />
+                <marker date="1447576236000" expanded="true" signature="852:1052" placeholder="{...}" />
+                <marker date="1447576236000" expanded="true" signature="1160:1706" placeholder="{...}" />
+                <marker date="1447576236000" expanded="true" signature="1783:1803" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerfectSpecular.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BRDF/PerfectSpecular.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Camera/Camera.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fisheye.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Camera/Fisheye.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19338423">
+            <state vertical-scroll-proportion="0.29400387">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -61,6 +226,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="ClionBuild" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -148,16 +316,6 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinyRay" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinyRay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -167,6 +325,11 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="TinyRay" TARGET_NAME="TinyRay" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -218,6 +381,13 @@
       <option name="number" value="Default" />
       <updated>1447564211180</updated>
     </task>
+    <task id="LOCAL-00001" summary="2015-11-15">
+      <created>1447578838605</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1447578838605</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -226,17 +396,17 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18798587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -247,6 +417,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2015-11-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2015-11-15" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -254,7 +428,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utilities/Point3D.h">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Point3D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -264,7 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Ray.h">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Ray.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -274,7 +448,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/RGBColor.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/RGBColor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -284,7 +458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/RGBColor.h">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/RGBColor.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -292,7 +466,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/ShadeRec.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/ShadeRec.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1116208">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -302,7 +476,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World/ViewPlane.cpp">
+    <entry file="file://$PROJECT_DIR$/src/World/ViewPlane.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -310,7 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Point2D.h">
+    <entry file="file://$PROJECT_DIR$/src/Utilities/Point2D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -318,7 +492,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Pinhole.h">
+    <entry file="file://$PROJECT_DIR$/src/Camera/Pinhole.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
@@ -328,7 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Pinhole.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Camera/Pinhole.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
@@ -336,7 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeometricObjects/GeometricObject.h">
+    <entry file="file://$PROJECT_DIR$/src/GeometricObjects/GeometricObject.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
@@ -344,7 +518,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeometricObjects/Rectangle.h">
+    <entry file="file://$PROJECT_DIR$/src/GeometricObjects/Rectangle.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -352,7 +526,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Material.h">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Material.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2324159">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -362,7 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Matte.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Matte.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -370,7 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Phong.h">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Phong.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -380,7 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Reflective.h">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Reflective.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
@@ -388,7 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Matte.h">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Matte.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37767583">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -398,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Reflective.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Reflective.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -406,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sampler/Regular.h">
+    <entry file="file://$PROJECT_DIR$/src/Sampler/Regular.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -414,7 +588,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sampler/Sampler.h">
+    <entry file="file://$PROJECT_DIR$/src/Sampler/Sampler.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
@@ -424,7 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/MultipleObjects.h">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/MultipleObjects.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -432,7 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/MultipleObjects.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/MultipleObjects.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -440,7 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/RayCast.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/RayCast.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
@@ -450,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/RayCast.h">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/RayCast.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -458,7 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/SingleSphere.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/SingleSphere.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14525993">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
@@ -466,7 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/Tracer.h">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/Tracer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2324159">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
@@ -474,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/SingleSphere.h">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/SingleSphere.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -482,7 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/Whitted.h">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/Whitted.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -490,7 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/Tracer.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/Tracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -498,7 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracer/Whitted.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Tracer/Whitted.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2614679">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -506,7 +680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sampler/MultiJittered.h">
+    <entry file="file://$PROJECT_DIR$/src/Sampler/MultiJittered.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -514,7 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sampler/MultiJittered.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Sampler/MultiJittered.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.974299">
           <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
@@ -524,7 +698,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Materials/Phong.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Materials/Phong.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44392523">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
@@ -532,7 +706,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lights/Light.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Lights/Light.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44392523">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
@@ -540,7 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeometricObjects/Rectangle.cpp">
+    <entry file="file://$PROJECT_DIR$/src/GeometricObjects/Rectangle.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.728972">
           <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
@@ -550,7 +724,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World/World.cpp">
+    <entry file="file://$PROJECT_DIR$/src/World/World.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48831776">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -561,7 +735,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World/World.h">
+    <entry file="file://$PROJECT_DIR$/src/World/World.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84345794">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
@@ -571,7 +745,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World/ViewPlane.h">
+    <entry file="file://$PROJECT_DIR$/src/World/ViewPlane.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -579,7 +753,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/GlossySpecular.h">
+    <entry file="file://$PROJECT_DIR$/src/Camera/Fisheye.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -587,87 +761,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/Lambertian.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/Lambertian.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35514018">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="e#130#153#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/PerfectSpecular.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2873832">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding>
-            <element signature="e#134#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/PerfectSpecular.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48831776">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="e#207#224#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Camera.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26635513">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="e#181#215#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/BRDF.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Fisheye.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Fisheye.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/GlossySpecular.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31424937">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Camera/Camera.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Camera/Camera.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2659033">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
@@ -675,25 +769,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BRDF/BRDF.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4351145">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/BRDF.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/BRDF.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/BRDF/Lambertian.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/BRDF/Lambertian.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19338423">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/GlossySpecular.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/PerfectSpecular.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/GlossySpecular.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <marker date="1447576236000" expanded="true" signature="413:453" placeholder="{...}" />
+            <marker date="1447576236000" expanded="true" signature="518:586" placeholder="{...}" />
+            <marker date="1447576236000" expanded="true" signature="661:757" placeholder="{...}" />
+            <marker date="1447576236000" expanded="true" signature="852:1052" placeholder="{...}" />
+            <marker date="1447576236000" expanded="true" signature="1160:1706" placeholder="{...}" />
+            <marker date="1447576236000" expanded="true" signature="1783:1803" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BRDF/PerfectSpecular.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Camera/Camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Camera/Fisheye.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29400387">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
