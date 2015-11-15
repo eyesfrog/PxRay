@@ -12,24 +12,24 @@ This version is rebuilt with __Clion__.
 ## Update
 Add a new camera Fisheye.
 
-![Fisheye](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/Fisheye.png)
+![Fisheye](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/Fisheye.png)
 
 ## Gallery
 Here's some pictures rendered by TinyRay.
 
 Enjoy  :)
 
-![MultiBall](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/MultiBall.png)
+![MultiBall](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/MultiBall.png)
 
-![Room](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/Room.png)
+![Room](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/Room.png)
 
-![ThreeLights](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/ThreeLights.png)
+![ThreeLights](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/ThreeLights.png)
 
-![twoballs](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/TwoBalls.png)
+![twoballs](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/TwoBalls.png)
 
-![balltouch](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/BallTouch.png)
+![balltouch](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/BallTouch.png)
 
-![shiny](https://raw.githubusercontent.com/eyesfrog/TinyRay/ClionBuild/Gallery/Shiny.png)
+![shiny](https://raw.githubusercontent.com/eyesfrog/TinyRay/master/Gallery/Shiny.png)
 
 ## About
 This ray tracer is my personal practice on Computer Graphics. And it is implemented under the guidance of great books : _Ray Tracing From The Ground Up_ and _Physically Based Rendering_.
