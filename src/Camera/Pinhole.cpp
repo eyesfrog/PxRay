@@ -2,8 +2,8 @@
 //  Pinhole.cpp
 //  TinyRay
 //
-//  Created by eyefrog on 15/7/21.
-//  Copyright (c) 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/7/21.
+//  Copyright (c) 2015年 eyesfrog. All rights reserved.
 //
 
 #include "Pinhole.h"
@@ -58,7 +58,7 @@ Pinhole::render_scene(const World& w)
 	RGBColor L;
 	ViewPlane vp(w.vp);
 	Ray ray;
-	//int depth = 0;
+	int depth = 0;
 	Point2D pp;
 	Point2D sp;
 
@@ -66,7 +66,7 @@ Pinhole::render_scene(const World& w)
 
 	ray.o = eye;
 
-	FILE* f = fopen("/Users/eyefrog/Desktop/image.bmp", "w");
+	FILE* f = fopen("/Users/eyesfrog/Desktop/image.bmp", "w");
 	fprintf(f, "P3\n%d %d\n%d\n", vp.hres, vp.vres, 255);
 
 	for (int r = vp.vres-1; r>=0; --r) {
@@ -77,7 +77,7 @@ Pinhole::render_scene(const World& w)
 				pp.x = vp.s*(c-0.5*vp.hres+sp.x);
 				pp.y = vp.s*(r-0.5*vp.vres+sp.y);
 				ray.d = get_direction(pp);
-				L += w.tracer_ptr->trace_ray(ray);
+				L += w.tracer_ptr->trace_ray(ray,depth);
 			}
 			L /= vp.num_samples;
 			L *= exposure_time;

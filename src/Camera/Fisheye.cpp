@@ -2,8 +2,8 @@
 //  Fisheye.cpp
 //  TinyRay
 //
-//  Created by eyefrog on 15/11/15.
-//  Copyright © 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/11/15.
+//  Copyright © 2015年 eyesfrog. All rights reserved.
 //
 
 #include "Fisheye.h"
@@ -74,7 +74,7 @@ Fisheye::render_scene(const World& w)
 
     ray.o = eye;
 
-    FILE* f = fopen("/Users/eyefrog/Desktop/image.bmp", "w");
+    FILE* f = fopen("/Users/eyesfrog/Desktop/image.png", "w");
     fprintf(f, "P3\n%d %d\n%d\n", vp.hres, vp.vres, 255);
 
     for (int r = vp.vres - 1; r >= 0; --r) {

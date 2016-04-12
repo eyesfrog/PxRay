@@ -2,8 +2,8 @@
 //  Camera.h
 //  TinyRay
 //
-//  Created by eyefrog on 15/7/21.
-//  Copyright (c) 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/7/21.
+//  Copyright (c) 2015年 eyesfrog. All rights reserved.
 //
 
 #ifndef __TinyRay__Camera__
@@ -53,7 +53,7 @@ public:
 protected:
 
 	Point3D eye;
-	Point3D lookat;
+	Point3D look_at;
 	Vector3D up;
 	Vector3D u, v, w;
 	float exposure_time;
@@ -79,17 +79,17 @@ Camera::set_eye(const float _x, const float _y, const float _z)
 inline void
 Camera::set_lookat(const Point3D& p)
 {
-	lookat.x = p.x;
-	lookat.y = p.y;
-	lookat.z = p.z;
+	look_at.x = p.x;
+	look_at.y = p.y;
+	look_at.z = p.z;
 }
 
 inline void
 Camera::set_lookat(const float _x, const float _y, const float _z)
 {
-	lookat.x = _x;
-	lookat.y = _y;
-	lookat.z = _z;
+	look_at.x = _x;
+	look_at.y = _y;
+	look_at.z = _z;
 }
 
 inline void

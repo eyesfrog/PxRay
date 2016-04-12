@@ -1,5 +1,5 @@
 //
-// Created by eyefrog on 15/7/15.
+// Created by eyesfrog on 15/7/15.
 //
 
 #ifndef TINYRAY_WORLD_H
@@ -9,9 +9,11 @@
 #include "ViewPlane.h"
 #include "../GeometricObjects/GeometricObject.h"
 #include "../Utilities/RGBColor.h"
+#include "../Utilities/Math.h"
 #include "../Tracer/Tracer.h"
 #include "../Camera/Camera.h"
 #include "../Lights/Light.h"
+#include "../Lights/Ambient.h"
 #include "../GeometricObjects/Sphere.h"
 
 class World {

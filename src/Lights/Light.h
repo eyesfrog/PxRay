@@ -2,8 +2,8 @@
 //  Light.h
 //  TinyRay
 //
-//  Created by eyefrog on 15/7/31.
-//  Copyright (c) 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/7/31.
+//  Copyright (c) 2015年 eyesfrog. All rights reserved.
 //
 
 #ifndef __TinyRay__Light__

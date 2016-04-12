@@ -2,8 +2,8 @@
 //  PerfectSpecular.cpp
 //  TinyRay
 //
-//  Created by eyefrog on 15/8/3.
-//  Copyright (c) 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/8/3.
+//  Copyright (c) 2015年 eyesfrog. All rights reserved.
 //
 
 #include "PerfectSpecular.h"

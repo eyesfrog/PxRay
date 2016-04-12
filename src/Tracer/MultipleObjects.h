@@ -1,5 +1,5 @@
 //
-// Created by eyefrog on 15/7/17.
+// Created by eyesfrog on 15/7/17.
 //
 
 #ifndef TINYRAY_MULTIPLEOBJECTS_H

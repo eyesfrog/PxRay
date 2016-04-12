@@ -83,6 +83,6 @@ set(SOURCE_FILES
         src/World/ViewPlane.h
         src/World/World.cpp
         src/World/World.h
-        src/main.cpp)
+        src/main.cpp src/GeometricObjects/OpenCylinder.cpp src/GeometricObjects/OpenCylinder.h src/Build/Build.cpp src/Build/Build.cpp)
 
-add_executable(TinyRay ${SOURCE_FILES})
+add_executable(TinyRay ${SOURCE_FILES} src/GeometricObjects/OpenCylinder.cpp src/GeometricObjects/OpenCylinder.h)

@@ -2,8 +2,8 @@
 //  Fisheye.hpp
 //  TinyRay
 //
-//  Created by eyefrog on 15/11/15.
-//  Copyright © 2015年 eyefrog. All rights reserved.
+//  Created by eyesfrog on 15/11/15.
+//  Copyright © 2015年 eyesfrog. All rights reserved.
 //
 
 #ifndef Fisheye_h

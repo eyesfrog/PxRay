@@ -1,5 +1,5 @@
 //
-// Created by eyefrog on 15/7/15.
+// Created by eyesfrog on 15/7/15.
 //
 
 #ifndef TINYRAY_RAY_H
