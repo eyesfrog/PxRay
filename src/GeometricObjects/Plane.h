@@ -16,17 +16,13 @@ public:
 
 	Plane(const Plane& plane);
 
-	virtual Plane*
-			clone(void) const;
+	virtual Plane* clone(void) const;
 
-	Plane&
-			operator=(const Plane& rhs);
+	Plane& operator=(const Plane& rhs);
 
-	virtual bool
-			hit(const Ray& ray, double& tmin, ShadeRec& s) const;
+	virtual bool hit(const Ray& ray, double& tmin, ShadeRec& s) const;
 
-	virtual bool
-			shadow_hit(const Ray& ray, double& tmin) const;
+	virtual bool shadow_hit(const Ray& ray, double& tmin) const;
 
 	~Plane();
 

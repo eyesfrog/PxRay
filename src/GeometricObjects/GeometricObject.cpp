@@ -32,3 +32,15 @@ GeometricObject::get_material(void) const
 {
 	return material_ptr;
 }
+
+Point3D GeometricObject::sample() {
+	return NULL;
+}
+
+float GeometricObject::pdf(ShadeRec& sr) {
+	return NULL;
+}
+
+Normal GeometricObject::get_normal(const Point3D& p) {
+	return NULL;
+}

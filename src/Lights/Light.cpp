@@ -33,3 +33,11 @@ Light::L(ShadeRec& sr)
 {
 	return black;
 }
+
+float Light::G(const ShadeRec& sr) const {
+	return NULL;
+}
+
+float Light::pdf(const ShadeRec& sr) const {
+	return NULL;
+}

@@ -18,8 +18,7 @@ public:
 
 	~Sphere();
 
-	virtual Sphere*
-			clone(void) const;
+	virtual Sphere* clone(void) const;
 
 	Sphere& operator=(const Sphere& sphere);
 
@@ -29,11 +28,9 @@ public:
 
 	void set_radius(const double r);
 
-	virtual bool
-			hit(const Ray& ray, double& tmin, ShadeRec& sr) const;
+	virtual bool hit(const Ray& ray, double& tmin, ShadeRec& sr) const;
 
-	virtual bool
-			shadow_hit(const Ray& ray, double& tmin) const;
+	virtual bool shadow_hit(const Ray& ray, double& tmin) const;
 
 protected:
 

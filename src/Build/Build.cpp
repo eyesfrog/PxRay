@@ -3,10 +3,8 @@
 //
 
 #include "../World/World.h"
-//#include "../World/World.cpp"
 
 //Tracers
-#include "../Tracer/RayCast.h"
 #include "../Tracer/Whitted.h"
 
 //Cameras
@@ -15,26 +13,29 @@
 //BRDFs
 
 //Lights
-#include "../Lights/PointLight.h"
-#include "../Lights/Ambient.h"
 
 //Materials
 #include "../Materials/Matte.h"
 #include "../Materials/Phong.h"
-#include "../GeometricObjects/Plane.h"
+#include "../Materials/Emissive.h"
 #include "../Materials/Reflective.h"
+#include "../GeometricObjects/Plane.h"
 #include "../GeometricObjects/Rectangle.h"
-#include "../Camera/Fisheye.h"
-
+#include "../Lights/AreaLight.h"
+#include "../Lights/PointLight.h"
+#include "../Tracer/AreaLighting.h"
 
 void
 World::build()
 {
-	int num_samples = 16;
+	int num_samples = 100;
+
+	Sampler* sampler_ptr = new MultiJittered(num_samples);
 
 	vp.set_hres(600);
 	vp.set_vres(600);
 	vp.set_samples(num_samples);
+	vp.set_sampler(sampler_ptr);
 	vp.set_max_depth(20);
 
 	tracer_ptr = new Whitted(this);
@@ -50,6 +51,7 @@ World::build()
 	//pinhole_ptr->set_fov(360);
 	pinhole_ptr->compute_uvw();
 	set_camera(pinhole_ptr);
+
 
 	PointLight* light_ptr1 = new PointLight;
 	light_ptr1->set_location(10, 10, 0);
@@ -75,10 +77,11 @@ World::build()
 	light_ptr4->set_shadows(true);
 	add_light(light_ptr4);
 
+
 	Reflective* reflective_ptr1 = new Reflective;
 	reflective_ptr1->set_ka(0.1);
 	reflective_ptr1->set_kd(0.4);
-	reflective_ptr1->set_cd(0.5,0,0);
+	reflective_ptr1->set_cd(0.5);
 	reflective_ptr1->set_ks(0.25);
 	reflective_ptr1->set_exp(100.0);
 	reflective_ptr1->set_kr(0.75);
@@ -98,6 +101,8 @@ World::build()
 	Plane* ceiling_ptr = new Plane(Point3D(0, room_size,  0), Normal(0, -1, 0));
 	ceiling_ptr->set_material(matte_ptr1);
 	add_object(ceiling_ptr);
+
+
 
 	Matte* matte_ptr3 = new Matte;
 	matte_ptr3->set_ka(0.15);
@@ -139,10 +144,28 @@ World::build()
 	Point3D p0;
 	Vector3D a, b;
 
+	Emissive* emissive_ptr = new Emissive;
+	emissive_ptr->scale_radiance(5.0);
+	emissive_ptr->set_ce(white);
+
+	p0 = Point3D(-2, 10.9, -2);
+	a = Vector3D(4, 0, 0);
+	b = Vector3D(0, 0, 4);
+	Normal n(0, -1, 0);
+	Rectangle* rectangle = new Rectangle(p0, a, b, n);
+	rectangle->set_sampler(sampler_ptr);
+	rectangle->set_material(emissive_ptr);
+	add_object(rectangle);
+
+	AreaLight* area_light_ptr = new AreaLight;
+	area_light_ptr->set_object(rectangle);
+	area_light_ptr->set_shadows(true);
+	add_light(area_light_ptr);
+
 	p0 = Point3D(-mirror_size, -mirror_size, -(room_size - offset));
 	a = Vector3D(2.0 * mirror_size, 0, 0);
 	b = Vector3D(0, 2.0 * mirror_size, 0);
-	Normal n(0, 0, 1);
+	n = Normal(0, 0, 1);
 	Rectangle* rectangle_ptr1 = new Rectangle(p0, a, b, n);
 	rectangle_ptr1->set_material(reflective_ptr2);
 	add_object(rectangle_ptr1);

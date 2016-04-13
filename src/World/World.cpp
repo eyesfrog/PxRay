@@ -3,7 +3,7 @@
 //
 
 #include "../World/World.h"
-
+#include "../Materials/Material.h"
 
 World::World(void)
 		:
@@ -32,8 +32,6 @@ World::~World()
 	delete_lights();
 	delete_materials();
 }
-
-
 
 RGBColor
 World::max_to_one(const RGBColor& c) const

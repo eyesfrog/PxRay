@@ -20,37 +20,27 @@ public:
 
 	Rectangle(const Point3D& _p0, const Vector3D& _a, const Vector3D& _b, const Normal& _n);
 
-	virtual Rectangle*
-			clone(void) const;
+	virtual Rectangle* clone(void) const;
 
 	Rectangle(const Rectangle& r);
 
-	virtual
-	~Rectangle(void);
+	virtual ~Rectangle(void);
 
-	Rectangle&
-			operator=(const Rectangle& rhs);
+	Rectangle& operator=(const Rectangle& rhs);
 
-	BBox
-			get_bounding_box(void);
+	BBox get_bounding_box(void);
 
-	virtual bool
-			hit(const Ray& ray, double& tmin, ShadeRec& s) const;
+	virtual bool hit(const Ray& ray, double& tmin, ShadeRec& s) const;
 
-	virtual bool
-			shadow_hit(const Ray& ray, double& tmin) const;
+	virtual bool shadow_hit(const Ray& ray, double& tmin) const;
 
-	virtual void
-			set_sampler(Sampler* sampler);
+	void set_sampler(Sampler* sampler);
 
-	virtual Point3D
-			sample(void);
+	virtual Point3D sample(void);
 
-	virtual Normal
-			get_normal(const Point3D& p);
+	virtual Normal get_normal(const Point3D& p);
 
-	virtual float
-			pdf(ShadeRec& sr);
+	virtual float pdf(ShadeRec& sr);
 
 private:
 	Point3D p0;

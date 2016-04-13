@@ -52,7 +52,7 @@ Phong::~Phong()
 	}
 }
 
-Material*
+Phong*
 Phong::clone(void) const
 {
 	return new Phong(*this);

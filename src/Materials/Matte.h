@@ -18,11 +18,9 @@ public:
 
 	Matte(const Matte& m);
 
-	Matte&
-			operator=(const Matte& rhs);
+	Matte& operator=(const Matte& rhs);
 
-	virtual Material*
-			clone(void) const;
+	virtual Matte* clone(void) const;
 
 	~Matte();
 
@@ -36,8 +34,9 @@ public:
 
 	void set_cd(const float c);
 
-	virtual RGBColor
-			shade(ShadeRec& sr);
+	virtual RGBColor shade(ShadeRec& sr);
+
+	virtual RGBColor area_light_shade(ShadeRec& sr);
 
 private:
 	Lambertian* ambient_brdf;

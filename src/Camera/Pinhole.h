@@ -44,7 +44,6 @@ private:
 
 };
 
-
 inline void
 Pinhole::set_view_distance(const float _d)
 {

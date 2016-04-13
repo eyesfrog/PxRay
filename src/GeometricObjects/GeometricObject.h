@@ -11,6 +11,7 @@ class Material;
 #include "../Utilities/BBox.h"
 #include "../Utilities/Ray.h"
 #include "../Utilities/ShadeRec.h"
+#include "../Sampler/Sampler.h"
 
 class GeometricObject {
 
@@ -18,18 +19,21 @@ public:
 
 	GeometricObject(void);
 
-	virtual GeometricObject*
-			clone(void) const = 0;
+	virtual GeometricObject* clone(void) const = 0;
 
 	virtual ~GeometricObject();
 
-	virtual bool
-			hit(const Ray& ray, double& tmin, ShadeRec& sr) const = 0;
+	virtual bool hit(const Ray& ray, double& tmin, ShadeRec& sr) const = 0;
 
-	virtual bool
-			shadow_hit(const Ray& ray, double& tmin) const = 0;
+	virtual bool shadow_hit(const Ray& ray, double& tmin) const = 0;
 
 	virtual void set_material(Material* mPtr);
+
+	virtual Point3D sample(void);
+
+	virtual Normal get_normal(const Point3D& p);
+
+	virtual float pdf(ShadeRec& sr);
 
 	Material* get_material(void) const;
 

@@ -26,22 +26,22 @@ public:
 	Light&
 			operator=(const Light& rhs);
 
-	virtual Light*
-			clone(void) const = 0;
+	virtual Light* clone(void) const = 0;
 
 	virtual Vector3D
 			get_direction(ShadeRec& sr) = 0;
 
 	void set_shadows(bool tf);
 
-	bool
-			casts_shadows();
+	bool casts_shadows();
 
-	virtual RGBColor
-			L(ShadeRec& sr);
+	virtual RGBColor L(ShadeRec& sr);
 
-	virtual bool
-			in_shadow(const Ray& ray, const ShadeRec& sr) const = 0;
+	virtual float G(const ShadeRec& sr) const;
+
+	virtual float pdf(const ShadeRec& sr) const;
+
+	virtual bool in_shadow(const Ray& ray, const ShadeRec& sr) const = 0;
 
 protected:
 	bool shadows;

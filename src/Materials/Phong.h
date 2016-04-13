@@ -22,11 +22,9 @@ public:
 
 	~Phong();
 
-	Phong&
-			operator=(const Phong& rhs);
+	Phong& operator=(const Phong& rhs);
 
-	virtual Material*
-			clone(void) const;
+	virtual Phong* clone(void) const;
 
 	virtual RGBColor shade(ShadeRec& sr);
 

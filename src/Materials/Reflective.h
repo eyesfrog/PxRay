@@ -18,11 +18,9 @@ public:
 
 	Reflective(const Reflective& rm);
 
-	Reflective&
-			operator=(const Reflective& rhs);
+	Reflective& operator=(const Reflective& rhs);
 
-	virtual Reflective*
-			clone(void) const;
+	virtual Reflective* clone(void) const;
 
 	~Reflective(void);
 

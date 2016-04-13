@@ -18,7 +18,6 @@ Camera::Camera(void)
 		w(0, 0, 1),
 		exposure_time(1.0) { }
 
-
 Camera::Camera(const Camera& camera)
 		:
 		eye(camera.eye),
@@ -34,7 +33,7 @@ Camera::~Camera() { }
 Camera&
 Camera::operator=(const Camera& rhs)
 {
-	if (this ==& rhs)
+	if (this==&rhs)
 		return *this;
 
 	eye = rhs.eye;
@@ -52,7 +51,7 @@ Camera::operator=(const Camera& rhs)
 void
 Camera::compute_uvw(void)
 {
-	w = eye - look_at;
+	w = eye-look_at;
 	w.normalize();
 	u = up ^ w;
 	u.normalize();
