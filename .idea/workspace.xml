@@ -387,7 +387,7 @@
       <workItem from="1479151651621" duration="31000" />
       <workItem from="1479151708782" duration="11000" />
       <workItem from="1480056295087" duration="1257000" />
-      <workItem from="1481694359458" duration="118000" />
+      <workItem from="1481694359458" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="add Vectors">
       <created>1464368807289</created>
@@ -403,11 +403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481694468291</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2016-12-13">
+      <created>1481694482041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481694482041</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1704000" />
+    <option name="totallyTimeSpent" value="1714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="69" width="1440" height="900" extended-state="0" />
