@@ -11,14 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddf9e322-e597-4528-a27d-936123ac5fab" name="Default" comment="2016-12-13">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/pbrt.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pbrt.iml" afterPath="$PROJECT_DIR$/.idea/pbrt.iml" />
+    <list default="true" id="ddf9e322-e597-4528-a27d-936123ac5fab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/geometry.h" afterPath="$PROJECT_DIR$/src/core/geometry.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/pbrt.cpp" afterPath="$PROJECT_DIR$/src/main/pbrt.cpp" />
     </list>
     <ignored path="pbrt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -393,7 +387,7 @@
       <workItem from="1479151651621" duration="31000" />
       <workItem from="1479151708782" duration="11000" />
       <workItem from="1480056295087" duration="1257000" />
-      <workItem from="1481694359458" duration="97000" />
+      <workItem from="1481694359458" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="add Vectors">
       <created>1464368807289</created>
@@ -402,11 +396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464368807289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2016-12-13">
+      <created>1481694468291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481694468291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1683000" />
+    <option name="totallyTimeSpent" value="1704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="69" width="1440" height="900" extended-state="0" />
