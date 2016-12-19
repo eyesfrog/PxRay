@@ -1,4 +1,4 @@
 # TinyRay
-A physically based ray tracer
+A physically based ray tracer.
 
-Refactoring as pbrt v3
+Refactoring according to pbrt v3.
