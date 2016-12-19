@@ -35,6 +35,7 @@ class Point2;
 template <typename T>
 class Normal3;
 
+class Medium;
 
 //Global inline functions
 
