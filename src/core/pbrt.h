@@ -26,17 +26,26 @@ typedef float Float;
 
 template <typename T>
 class Vector2;
+
 template <typename T>
 class Vector3;
+
 template <typename T>
 class Point3;
+
 template <typename T>
 class Point2;
+
 template <typename T>
 class Normal3;
 
 class Medium;
 
 //Global inline functions
+
+inline Float Lerp(Float t, Float v1, Float v2)
+{
+    return (1 - t) * v1 + t * v2;
+}
 
 #endif //PBRT_PBRT_H
