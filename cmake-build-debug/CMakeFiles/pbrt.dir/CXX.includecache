@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp
+geometry.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
+pbrt.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
+cmath
+-
+cstdlib
+-
+cstdio
+-
+cstring
+-
+cassert
+-
+string
+-
+vector
+-
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.cpp
+scene.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/main/pbrt.cpp
+iostream
+-
+
