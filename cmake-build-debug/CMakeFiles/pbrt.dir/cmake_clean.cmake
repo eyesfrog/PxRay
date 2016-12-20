@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pbrt.dir/src/main/pbrt.cpp.o"
   "CMakeFiles/pbrt.dir/src/core/scene.cpp.o"
   "CMakeFiles/pbrt.dir/src/core/geometry.cpp.o"
+  "CMakeFiles/pbrt.dir/src/core/Transform.cpp.o"
   "pbrt.pdb"
   "pbrt"
 )

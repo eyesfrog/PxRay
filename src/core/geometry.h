@@ -26,8 +26,7 @@ public:
     // Vector2 Public Methods
     Vector2() { x = y = 0; }
 
-    Vector2(T xx, T yy)
-            : x(xx), y(yy) { assert(!HasNaNs()); }
+    Vector2(T xx, T yy) : x(xx), y(yy) { assert(!HasNaNs()); }
 
     bool HasNaNs() const { return isNaN(x) || isNaN(y); }
 
@@ -152,8 +151,7 @@ public:
 
     Vector3() { x = y = z = 0; }
 
-    Vector3(T x, T y, T z)
-            : x(x), y(y), z(z) { assert(!HasNaNs()); }
+    Vector3(T x, T y, T z) : x(x), y(y), z(z) { assert(!HasNaNs()); }
 
     bool HasNaNs() const { return isNaN(x) || isNaN(y) || isNaN(z); }
 
@@ -295,13 +293,11 @@ template <typename T>
 class Point2 {
 public:
     // Point2 Public Methods
-    explicit Point2(const Point3<T>& p)
-            : x(p.x), y(p.y) { assert(!HasNaNs()); }
+    explicit Point2(const Point3<T>& p) : x(p.x), y(p.y) { assert(!HasNaNs()); }
 
     Point2() { x = y = 0; }
 
-    Point2(T xx, T yy)
-            : x(xx), y(yy) { assert(!HasNaNs()); }
+    Point2(T xx, T yy) : x(xx), y(yy) { assert(!HasNaNs()); }
 
     template <typename U>
     explicit Point2(const Point2<U>& p)
@@ -455,12 +451,10 @@ public:
     // Point3 Public Methods
     Point3() { x = y = z = 0; }
 
-    Point3(T x, T y, T z)
-            : x(x), y(y), z(z) { assert(!HasNaNs()); }
+    Point3(T x, T y, T z) : x(x), y(y), z(z) { assert(!HasNaNs()); }
 
     template <typename U>
-    explicit Point3(const Point3<U>& p)
-            : x((T) p.x), y((T) p.y), z((T) p.z)
+    explicit Point3(const Point3<U>& p) : x((T) p.x), y((T) p.y), z((T) p.z)
     {
         assert(!HasNaNs());
     }
@@ -621,8 +615,7 @@ public:
     // Normal3 Public Methods
     Normal3() { x = y = z = 0; }
 
-    Normal3(T xx, T yy, T zz)
-            : x(xx), y(yy), z(zz) { assert(!HasNaNs()); }
+    Normal3(T xx, T yy, T zz) : x(xx), y(yy), z(zz) { assert(!HasNaNs()); }
 
     Normal3<T> operator+(const Normal3<T>& n) const
     {
@@ -711,8 +704,7 @@ public:
 
 #endif  // !NDEBUG
 
-    explicit Normal3<T>(const Vector3<T>& v)
-            : x(v.x), y(v.y), z(v.z)
+    explicit Normal3<T>(const Vector3<T>& v) : x(v.x), y(v.y), z(v.z)
     {
         assert(!v.HasNaNs());
     }
@@ -757,8 +749,7 @@ public:
 class Ray {
 public:
     //Ray Public Methods
-    Ray()
-            : tMax(INFINITY), time(0.f), medium(nullptr) { };
+    Ray() : tMax(INFINITY), time(0.f), medium(nullptr) { };
 
     Ray(const Point3f& o, const Vector3f& d, Float tMax = INFINITY, Float time = 0.f, const Medium* medium1 = nullptr)
             : o(o), d(d), tMax(tMax), time(time), medium(medium) { }
@@ -780,14 +771,12 @@ class RayDifferential : public Ray {
     RayDifferential() { hasDifferentials = false; }
 
     RayDifferential(const Point3f& o, const Vector3f& d, Float tMax = INFINITY, Float time = 0.f,
-            const Medium* medium = nullptr)
-            : Ray(o, d, tMax, time, medium)
+                    const Medium* medium = nullptr) : Ray(o, d, tMax, time, medium)
     {
         hasDifferentials = false;
     }
 
-    RayDifferential(const Ray& ray)
-            : Ray(ray)
+    RayDifferential(const Ray& ray) : Ray(ray)
     {
         hasDifferentials = false;
     }
@@ -819,8 +808,7 @@ public:
         pMax = Point2<T>(maxNum, maxNum);
     }
 
-    Bounds2(const Point2<T>& p)
-            : pMin(p), pMax(p) { }
+    Bounds2(const Point2<T>& p) : pMin(p), pMax(p) { }
 
     Bounds2(const Point2<T>& p1, const Point2<T>& p2)
             : pMin(std::min(p1.x, p2.x), std::min(p1.y, p2.y)), pMax(std::max(p1.x, p2.x), std::max(p1.y, p2.y)) { }
@@ -846,8 +834,7 @@ public:
 
     Point2<T> Lerp(const Point2f& t) const
     {
-        return Point2<T>(::Lerp(t.x, pMin.x, pMax.x),
-                ::Lerp(t.y, pMin.y, pMax.y));
+        return Point2<T>(::Lerp(t.x, pMin.x, pMax.x), ::Lerp(t.y, pMin.y, pMax.y));
     }
 
     Vector2<T> Offset(const Point2<T>& p) const
@@ -905,8 +892,7 @@ public:
         pMax = Point3<T>(minNum, minNum, minNum);
     }
 
-    Bounds3(const Point3<T>& p)
-            : pMin(p), pMax(p) { }
+    Bounds3(const Point3<T>& p) : pMin(p), pMax(p) { }
 
     Bounds3(const Point3<T>& p1, const Point3<T>& p2)
             : pMin(std::min(p1.x, p2.x), std::min(p1.y, p2.y), std::min(p1.z, p2.z)),
@@ -938,8 +924,8 @@ public:
     {
         assert(corner >= 0 && corner < 8);
         return Point3<T>((*this)[(corner & 1)].x,
-                (*this)[(corner & 2) ? 1 : 0].y,
-                (*this)[(corner & 4) ? 1 : 0].z);
+                         (*this)[(corner & 2) ? 1 : 0].y,
+                         (*this)[(corner & 4) ? 1 : 0].z);
     }
 
     Vector3<T> Diagonal() const
@@ -973,8 +959,8 @@ public:
     Point3<T> Lerp(const Point3f& t) const
     {
         return Point3<T>(::Lerp(t.x, pMin.x, pMax.x),
-                ::Lerp(t.y, pMin.y, pMax.y),
-                ::Lerp(t.z, pMin.z, pMax.z));
+                         ::Lerp(t.y, pMin.y, pMax.y),
+                         ::Lerp(t.z, pMin.z, pMax.z));
     }
 
     Vector3<T> Offset(const Point3<T>& p) const
@@ -1091,7 +1077,7 @@ inline Vector3<T> Cross(const Vector3<T>& v1, const Vector3<T>& v2)
     double v1x = v1.x, v1y = v1.y, v1z = v1.z;
     double v2x = v2.x, v2y = v2.y, v2z = v2.z;
     return Vector3<T>((v1y * v2z) - (v1z * v2y), (v1z * v2x) - (v1x * v2z),
-            (v1x * v2y) - (v1y * v2x));
+                      (v1x * v2y) - (v1y * v2x));
 }
 
 template <typename T>
@@ -1101,7 +1087,7 @@ inline Vector3<T> Cross(const Vector3<T>& v1, const Normal3<T>& v2)
     double v1x = v1.x, v1y = v1.y, v1z = v1.z;
     double v2x = v2.x, v2y = v2.y, v2z = v2.z;
     return Vector3<T>((v1y * v2z) - (v1z * v2y), (v1z * v2x) - (v1x * v2z),
-            (v1x * v2y) - (v1y * v2x));
+                      (v1x * v2y) - (v1y * v2x));
 }
 
 template <typename T>
@@ -1110,8 +1096,7 @@ inline Vector3<T> Cross(const Normal3<T>& v1, const Vector3<T>& v2)
     assert(!v1.HasNaNs() && !v2.HasNaNs());
     double v1x = v1.x, v1y = v1.y, v1z = v1.z;
     double v2x = v2.x, v2y = v2.y, v2z = v2.z;
-    return Vector3<T>((v1y * v2z) - (v1z * v2y), (v1z * v2x) - (v1x * v2z),
-            (v1x * v2y) - (v1y * v2x));
+    return Vector3<T>((v1y * v2z) - (v1z * v2y), (v1z * v2x) - (v1x * v2z), (v1x * v2y) - (v1y * v2x));
 }
 
 template <typename T>
@@ -1139,14 +1124,14 @@ template <typename T>
 Vector3<T> Min(const Vector3<T>& p1, const Vector3<T>& p2)
 {
     return Vector3<T>(std::min(p1.x, p2.x), std::min(p1.y, p2.y),
-            std::min(p1.z, p2.z));
+                      std::min(p1.z, p2.z));
 }
 
 template <typename T>
 Vector3<T> Max(const Vector3<T>& p1, const Vector3<T>& p2)
 {
     return Vector3<T>(std::max(p1.x, p2.x), std::max(p1.y, p2.y),
-            std::max(p1.z, p2.z));
+                      std::max(p1.z, p2.z));
 }
 
 template <typename T>
@@ -1199,14 +1184,14 @@ template <typename T>
 Point3<T> Min(const Point3<T>& p1, const Point3<T>& p2)
 {
     return Point3<T>(std::min(p1.x, p2.x), std::min(p1.y, p2.y),
-            std::min(p1.z, p2.z));
+                     std::min(p1.z, p2.z));
 }
 
 template <typename T>
 Point3<T> Max(const Point3<T>& p1, const Point3<T>& p2)
 {
     return Point3<T>(std::max(p1.x, p2.x), std::max(p1.y, p2.y),
-            std::max(p1.z, p2.z));
+                     std::max(p1.z, p2.z));
 }
 
 template <typename T>
@@ -1377,7 +1362,7 @@ template <typename T>
 Bounds2<T> Union(const Bounds2<T>& b, const Point2<T>& p)
 {
     Bounds2<T> ret(Point2<T>(std::min(b.pMin.x, p.x), std::min(b.pMin.y, p.y)),
-            Point2<T>(std::max(b.pMax.x, p.x), std::max(b.pMax.y, p.y)));
+                   Point2<T>(std::max(b.pMax.x, p.x), std::max(b.pMax.y, p.y)));
     return ret;
 }
 
@@ -1386,8 +1371,7 @@ Bounds2<T> Union(const Bounds2<T>& b, const Bounds2<T>& b2)
 {
     Bounds2<T> ret(
             Point2<T>(std::min(b.pMin.x, b2.pMin.x), std::min(b.pMin.y, b2.pMin.y)),
-            Point2<T>(std::max(b.pMax.x, b2.pMax.x),
-                    std::max(b.pMax.y, b2.pMax.y)));
+            Point2<T>(std::max(b.pMax.x, b2.pMax.x), std::max(b.pMax.y, b2.pMax.y)));
     return ret;
 }
 
@@ -1396,8 +1380,8 @@ Bounds2<T> Intersect(const Bounds2<T>& b, const Bounds2<T>& b2)
 {
     Bounds2<T> ret(
             Point2<T>(std::max(b.pMin.x, b2.pMin.x), std::max(b.pMin.y, b2.pMin.y)),
-            Point2<T>(std::min(b.pMax.x, b2.pMax.x),
-                    std::min(b.pMax.y, b2.pMax.y)));
+            Point2<T>(std::min(b.pMax.x, b2.pMax.x), std::min(b.pMax.y, b2.pMax.y)));
+
     return ret;
 }
 
@@ -1412,49 +1396,43 @@ bool Overlaps(const Bounds2<T>& ba, const Bounds2<T>& bb)
 template <typename T>
 bool Inside(const Point2<T>& pt, const Bounds2<T>& b)
 {
-    return (pt.x >= b.pMin.x && pt.x <= b.pMax.x && pt.y >= b.pMin.y &&
-            pt.y <= b.pMax.y);
+    return (pt.x >= b.pMin.x && pt.x <= b.pMax.x && pt.y >= b.pMin.y && pt.y <= b.pMax.y);
 }
 
 template <typename T>
 bool InsideExclusive(const Point2<T>& pt, const Bounds2<T>& b)
 {
-    return (pt.x >= b.pMin.x && pt.x < b.pMax.x && pt.y >= b.pMin.y &&
-            pt.y < b.pMax.y);
+    return (pt.x >= b.pMin.x && pt.x < b.pMax.x && pt.y >= b.pMin.y && pt.y < b.pMax.y);
 }
 
 template <typename T, typename U>
 Bounds2<T> Expand(const Bounds2<T>& b, U delta)
 {
-    return Bounds2<T>(b.pMin - Vector2<T>(delta, delta),
-            b.pMax + Vector2<T>(delta, delta));
+    return Bounds2<T>(b.pMin - Vector2<T>(delta, delta), b.pMax + Vector2<T>(delta, delta));
 }
 
 template <typename T>
 Bounds3<T> Union(const Bounds3<T>& b, const Point3<T>& p)
 {
     return Bounds3<T>(Point3<T>(std::min(b.pMin.x, p.x), std::min(b.pMin.y, p.y), std::min(b.pMin.z, p.z)),
-            Point3<T>(std::max(b.pMax.x, p.x), std::max(b.pMax.y, p.y), std::max(b.pMax.z, p.z)));
+                      Point3<T>(std::max(b.pMax.x, p.x), std::max(b.pMax.y, p.y), std::max(b.pMax.z, p.z)));
 }
 
 template <typename T>
 Bounds3<T> Union(const Bounds3<T>& b1, const Bounds3<T>& b2)
 {
 
-    return Bounds3<T>(Point3<T>(std::min(b1.pMin.x, b2.pMin.x), std::min(b1.pMin.y, b2.pMin.y),
-            std::min(b1.pMin.z, b2.pMin.z)),
-            Point3<T>(std::max(b1.pMax.x, b2.pMax.x), std::max(b1.pMax.y, b2.pMax.y),
-                    std::max(b1.pMax.z, b2.pMax.z)));
-
+    return Bounds3<T>(
+            Point3<T>(std::min(b1.pMin.x, b2.pMin.x), std::min(b1.pMin.y, b2.pMin.y), std::min(b1.pMin.z, b2.pMin.z)),
+            Point3<T>(std::max(b1.pMax.x, b2.pMax.x), std::max(b1.pMax.y, b2.pMax.y), std::max(b1.pMax.z, b2.pMax.z)));
 }
 
 template <typename T>
 Bounds3<T> Intersect(const Bounds3<T>& b1, const Bounds3<T>& b2)
 {
-    return Bounds3<T>(Point3<T>(std::max(b1.pMin.x, b2.pMin.x), std::max(b1.pMin.y, b2.pMin.y),
-            std::max(b1.pMin.z, b2.pMin.z)),
-            Point3<T>(std::min(b1.pMax.x, b2.pMax.x), std::min(b1.pMax.y, b2.pMax.y),
-                    std::min(b1.pMax.z, b2.pMax.z)));
+    return Bounds3<T>(
+            Point3<T>(std::max(b1.pMin.x, b2.pMin.x), std::max(b1.pMin.y, b2.pMin.y), std::max(b1.pMin.z, b2.pMin.z)),
+            Point3<T>(std::min(b1.pMax.x, b2.pMax.x), std::min(b1.pMax.y, b2.pMax.y), std::min(b1.pMax.z, b2.pMax.z)));
 }
 
 template <typename T>
@@ -1485,7 +1463,7 @@ template <typename T, typename U>
 inline Bounds3<T> Expand(const Bounds3<T>& b, U delta)
 {
     return Bounds3<T>(b.pMin - Vector3<T>(delta, delta, delta),
-            b.pMax + Vector3<T>(delta, delta, delta));
+                      b.pMax + Vector3<T>(delta, delta, delta));
 };
 
 #endif //PBRT_GEOMETRY_H

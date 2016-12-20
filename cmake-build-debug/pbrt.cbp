@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.h">
+			<Option target="pbrt"/>
+		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp">
 			<Option target="pbrt"/>
 		</Unit>

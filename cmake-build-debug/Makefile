@@ -123,6 +123,33 @@ pbrt/fast:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/build
 .PHONY : pbrt/fast
 
+src/core/Transform.o: src/core/Transform.cpp.o
+
+.PHONY : src/core/Transform.o
+
+# target to build an object file
+src/core/Transform.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.o
+.PHONY : src/core/Transform.cpp.o
+
+src/core/Transform.i: src/core/Transform.cpp.i
+
+.PHONY : src/core/Transform.i
+
+# target to preprocess a source file
+src/core/Transform.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.i
+.PHONY : src/core/Transform.cpp.i
+
+src/core/Transform.s: src/core/Transform.cpp.s
+
+.PHONY : src/core/Transform.s
+
+# target to generate assembly for a file
+src/core/Transform.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.s
+.PHONY : src/core/Transform.cpp.s
+
 src/core/geometry.o: src/core/geometry.cpp.o
 
 .PHONY : src/core/geometry.o
@@ -213,6 +240,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pbrt"
+	@echo "... src/core/Transform.o"
+	@echo "... src/core/Transform.i"
+	@echo "... src/core/Transform.s"
 	@echo "... src/core/geometry.o"
 	@echo "... src/core/geometry.i"
 	@echo "... src/core/geometry.s"
