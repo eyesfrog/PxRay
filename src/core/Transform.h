@@ -155,6 +155,8 @@ public:
 
     Transform Rotate(Float theta, const Vector3f& axis);
 
+    Transform LookAt(const Point3f& position, const Point3f& lookat, const Vector3f& up);
+
     template <typename T>
     inline Point3<T> operator()(const Point3<T>& p) const;
 
@@ -276,7 +278,7 @@ inline Point3<T> Transform::operator()(const Point3<T> &p,
                  std::abs(m.m[1][2] * z) + std::abs(m.m[1][3]));
     T zAbsSum = (std::abs(m.m[2][0] * x) + std::abs(m.m[2][1] * y) +
                  std::abs(m.m[2][2] * z) + std::abs(m.m[2][3]));
-    *pError = T(gamma(3)) * Vector3<T>(xAbsSum, yAbsSum, zAbsSum);
+    *pError = Float(gamma(3)) * Vector3<T>(xAbsSum, yAbsSum, zAbsSum);
     assert(wp != 0);
     if (wp == 1)
         return Point3<T>(xp, yp, zp);
@@ -392,3 +394,41 @@ inline Ray Transform::operator()(const Ray &r, const Vector3f &oErrorIn,
     }
     return Ray(o, d, tMax, r.time, r.medium);
 }
+
+inline Bounds3f Transform::operator()(const Bounds3f& b) const {
+    const Transform& M = *this;
+    Bounds3f ret(M(Point3f(b.pMin.x, b.pMin.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMin.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMax.z)));
+
+    return ret;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

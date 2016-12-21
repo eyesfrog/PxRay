@@ -196,3 +196,33 @@ Transform Transform::Rotate(Float theta, const Vector3f& axis)
 
     return Transform(m, Transpose(m));
 }
+
+Transform Transform::LookAt(const Point3f& position, const Point3f& lookat, const Vector3f& up)
+{
+    Matrix4x4 cameraToWorld;
+
+    //Initialize fourth column of viewing matrix
+    cameraToWorld.m[0][3] = position.x;
+    cameraToWorld.m[1][3] = position.y;
+    cameraToWorld.m[2][3] = position.z;
+    cameraToWorld.m[3][3] = 1;
+
+    //Initialize first three columns of viewing matrix
+    Vector3f dir = Normalize(lookat - position);
+    Vector3f left = Normalize(Cross(Normalize(up), dir));
+    Vector3f newUp = Cross(dir, left);
+    cameraToWorld.m[0][0] = left.x;
+    cameraToWorld.m[1][0] = left.y;
+    cameraToWorld.m[2][0] = left.z;
+    cameraToWorld.m[3][0] = 0;
+    cameraToWorld.m[0][1] = newUp.x;
+    cameraToWorld.m[1][1] = newUp.y;
+    cameraToWorld.m[2][1] = newUp.z;
+    cameraToWorld.m[3][1] = 0;
+    cameraToWorld.m[0][2] = dir.x;
+    cameraToWorld.m[1][2] = dir.y;
+    cameraToWorld.m[2][2] = dir.z;
+    cameraToWorld.m[3][2] = 0;
+
+    return Transform(Inverse(cameraToWorld), cameraToWorld);
+}
