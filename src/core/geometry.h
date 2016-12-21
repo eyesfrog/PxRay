@@ -768,6 +768,7 @@ public:
 
 class RayDifferential : public Ray {
     // RayDiff Public Methods
+public:
     RayDifferential() { hasDifferentials = false; }
 
     RayDifferential(const Point3f& o, const Vector3f& d, Float tMax = INFINITY, Float time = 0.f,

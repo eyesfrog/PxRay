@@ -37,6 +37,16 @@ cstring
 -
 cassert
 -
+algorithm
+-
+cinttypes
+-
+iostream
+-
+limits
+-
+memory
+-
 string
 -
 vector

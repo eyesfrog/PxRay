@@ -19,8 +19,6 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include <float.h>
-#include <intrin.h>
 
 #define PBRT_VERSION "3.0.0"
 

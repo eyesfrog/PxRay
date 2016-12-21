@@ -125,9 +125,9 @@ Transform Transform::Scale(Float x, Float y, Float z)
                 0, 0, z, 0,
                 0, 0, 0, 1);
 
-    Matrix4x4 minv(1/x, 0, 0, 0,
-                   0, 1/y, 0, 0,
-                   0, 0, 1/z, 0,
+    Matrix4x4 minv(1 / x, 0, 0, 0,
+                   0, 1 / y, 0, 0,
+                   0, 0, 1 / z, 0,
                    0, 0, 0, 1);
 
     return Transform(m, minv);
@@ -136,15 +136,63 @@ Transform Transform::Scale(Float x, Float y, Float z)
 Transform Transform::RotateX(Float theta)
 {
     Float sinTheta = std::sin(Radians(theta));
-    return Transform();
+    Float cosTheta = std::cos(Radians(theta));
+
+    Matrix4x4 m(1, 0, 0, 0,
+                0, cosTheta, -sinTheta, 0,
+                0, sinTheta, cosTheta, 0,
+                0, 0, 0, 1);
+
+    return Transform(m, Transpose(m));
 }
 
 Transform Transform::RotateY(Float theta)
 {
-    return Transform();
+    Float sinTheta = std::sin(Radians(theta));
+    Float cosTheta = std::cos(Radians(theta));
+
+    Matrix4x4 m(cosTheta, 0, sinTheta, 0,
+                0, 1, 0, 0,
+                -sinTheta, 0, cosTheta, 0,
+                0, 0, 0, 1);
+
+    return Transform(m, Transpose(m));
 }
 
 Transform Transform::RotateZ(Float theta)
 {
-    return Transform();
+    Float sinTheta = std::sin(Radians(theta));
+    Float cosTheta = std::cos(Radians(theta));
+
+    Matrix4x4 m(cosTheta, -sinTheta, 0, 0,
+                sinTheta, cosTheta, 0, 0,
+                0, 0, 1, 0,
+                0, 0, 0, 1);
+
+    return Transform(m, Transpose(m));
+}
+
+Transform Transform::Rotate(Float theta, const Vector3f& axis)
+{
+    Vector3f a = Normalize(axis);
+    Float sinTheta = std::sin(Radians(theta));
+    Float cosTheta = std::cos(Radians(theta));
+    Matrix4x4 mat;
+    //Compute rotation of first basis vector
+    mat.m[0][0] = a.x * a.x + (1 - a.x * a.x) * cosTheta;
+    mat.m[0][1] = a.x * a.y * (1 - cosTheta) - a.z * sinTheta;
+    mat.m[0][2] = a.x * a.z * (1 - cosTheta) + a.y * sinTheta;
+    mat.m[0][3] = 0;
+
+    mat.m[1][0] = a.x * a.y * (1 - cosTheta) + a.z * sinTheta;
+    mat.m[1][1] = a.y * a.y + (1 - a.y * a.y) * cosTheta;
+    mat.m[1][2] = a.y * a.z * (1 - cosTheta) - a.x * sinTheta;
+    mat.m[1][3] = 0;
+
+    mat.m[2][0] = a.x * a.z * (1 - cosTheta) - a.y * sinTheta;
+    mat.m[2][1] = a.y * a.z * (1 - cosTheta) + a.x * sinTheta;
+    mat.m[2][2] = a.z * a.z + (1 - a.z * a.z) * cosTheta;
+    mat.m[2][3] = 0;
+
+    return Transform(m, Transpose(m));
 }
