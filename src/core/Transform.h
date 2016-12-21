@@ -395,19 +395,6 @@ inline Ray Transform::operator()(const Ray &r, const Vector3f &oErrorIn,
     return Ray(o, d, tMax, r.time, r.medium);
 }
 
-inline Bounds3f Transform::operator()(const Bounds3f& b) const {
-    const Transform& M = *this;
-    Bounds3f ret(M(Point3f(b.pMin.x, b.pMin.y, b.pMin.z)));
-    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMin.z)));
-    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMin.z)));
-    ret = Union(ret, M(Point3f(b.pMin.x, b.pMin.y, b.pMax.z)));
-    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMax.z)));
-    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMin.z)));
-    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMax.z)));
-    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMax.z)));
-
-    return ret;
-}
 
 
 

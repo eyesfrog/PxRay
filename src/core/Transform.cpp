@@ -226,3 +226,32 @@ Transform Transform::LookAt(const Point3f& position, const Point3f& lookat, cons
 
     return Transform(Inverse(cameraToWorld), cameraToWorld);
 }
+
+Bounds3f Transform::operator()(const Bounds3f& b) const
+{
+    const Transform& M = *this;
+    Bounds3f ret(M(Point3f(b.pMin.x, b.pMin.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMin.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMin.x, b.pMax.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMin.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMin.y, b.pMax.z)));
+    ret = Union(ret, M(Point3f(b.pMax.x, b.pMax.y, b.pMax.z)));
+
+    return ret;
+}
+
+Transform Transform::operator*(const Transform& t2) const
+{
+    return Transform(Matrix4x4::Mul(m, t2.m), Matrix4x4::Mul(t2.mInv, mInv));
+}
+
+bool Transform::SwapsHandedness() const
+{
+    Float det =
+            m.m[0][0] * (m.m[1][1] * m.m[2][2] - m.m[1][2] * m.m[2][1]) -
+            m.m[0][1] * (m.m[1][0] * m.m[2][2] - m.m[1][2] * m.m[2][0]) +
+            m.m[0][2] * (m.m[1][0] * m.m[2][1] - m.m[1][1] * m.m[2][0]);
+    return det<0;
+}

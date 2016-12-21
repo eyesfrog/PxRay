@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddf9e322-e597-4528-a27d-936123ac5fab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/pbrt" afterPath="$PROJECT_DIR$/cmake-build-debug/pbrt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Transform.cpp" afterPath="$PROJECT_DIR$/src/core/Transform.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Transform.h" afterPath="$PROJECT_DIR$/src/core/Transform.h" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="Transform.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Transform.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="924">
+              <caret line="255" column="16" lean-forward="false" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -87,8 +86,8 @@
       <file leaf-file-name="Transform.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/Transform.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1281">
-              <caret line="403" column="13" lean-forward="false" selection-start-line="403" selection-start-column="13" selection-end-line="403" selection-end-column="13" />
+            <state relative-caret-position="352">
+              <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
                 <element signature="e#96#113#0" expanded="true" />
@@ -97,7 +96,6 @@
                 <element signature="e#812#1275#0" expanded="false" />
                 <element signature="e#1281#1537#0" expanded="false" />
                 <element signature="e#1543#1799#0" expanded="false" />
-                <element signature="e#1852#5834#1" expanded="false" />
                 <element signature="e#1934#2271#0" expanded="false" />
                 <element signature="e#2422#2517#0" expanded="false" />
                 <element signature="e#2523#2619#0" expanded="false" />
@@ -154,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/core/transform.h" />
         <option value="$PROJECT_DIR$/src/core/geometry.h" />
         <option value="$PROJECT_DIR$/src/core/pbrt.h" />
-        <option value="$PROJECT_DIR$/src/core/Transform.cpp" />
         <option value="$PROJECT_DIR$/src/core/Transform.h" />
+        <option value="$PROJECT_DIR$/src/core/Transform.cpp" />
       </list>
     </option>
   </component>
@@ -473,7 +471,7 @@
       <workItem from="1482126709315" duration="21000" />
       <workItem from="1482149291198" duration="11656000" />
       <workItem from="1482292948146" duration="5611000" />
-      <workItem from="1482353383547" duration="3248000" />
+      <workItem from="1482353383547" duration="3914000" />
     </task>
     <task id="LOCAL-00001" summary="add Vectors">
       <created>1464368807289</created>
@@ -552,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482304565359</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add class Transform">
+      <created>1482356781025</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1482356781025</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41838000" />
+    <option name="totallyTimeSpent" value="42504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -973,6 +978,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/math.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="758" column="17" lean-forward="false" selection-start-line="758" selection-start-column="17" selection-end-line="758" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11296">
+          <caret line="1415" column="11" lean-forward="false" selection-start-line="1415" selection-start-column="11" selection-end-line="1415" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Transform.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="255" column="16" lean-forward="false" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/pbrt.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -1000,34 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Transform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/math.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="758" column="17" lean-forward="false" selection-start-line="758" selection-start-column="17" selection-end-line="758" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11296">
-          <caret line="1415" column="11" lean-forward="false" selection-start-line="1415" selection-start-column="11" selection-end-line="1415" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Transform.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="403" column="13" lean-forward="false" selection-start-line="403" selection-start-column="13" selection-end-line="403" selection-end-column="13" />
+        <state relative-caret-position="352">
+          <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
             <element signature="e#96#113#0" expanded="true" />
@@ -1036,7 +1041,6 @@
             <element signature="e#812#1275#0" expanded="false" />
             <element signature="e#1281#1537#0" expanded="false" />
             <element signature="e#1543#1799#0" expanded="false" />
-            <element signature="e#1852#5834#1" expanded="false" />
             <element signature="e#1934#2271#0" expanded="false" />
             <element signature="e#2422#2517#0" expanded="false" />
             <element signature="e#2523#2619#0" expanded="false" />
