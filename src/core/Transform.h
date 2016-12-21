@@ -94,14 +94,64 @@ public:
         return Transform(t.mInv, t.m);
     }
 
+    bool operator==(const Transform& t) const
+    {
+        return t.m == m && t.mInv == mInv;
+    }
+
+    bool operator!=(const Transform& t) const
+    {
+        return t.m != m || t.mInv != mInv;
+    }
+
+    bool IsIdentity() const
+    {
+        return (m.m[0][0] == 1.f && m.m[0][1] == 0.f && m.m[0][2] == 0.f &&
+                m.m[0][3] == 0.f && m.m[1][0] == 0.f && m.m[1][1] == 1.f &&
+                m.m[1][2] == 0.f && m.m[1][3] == 0.f && m.m[2][0] == 0.f &&
+                m.m[2][1] == 0.f && m.m[2][2] == 1.f && m.m[2][3] == 0.f &&
+                m.m[3][0] == 0.f && m.m[3][1] == 0.f && m.m[3][2] == 0.f &&
+                m.m[3][3] == 1.f);
+    }
+
+    const Matrix4x4& GetMatrix() const { return m; }
+
+    const Matrix4x4& GetInverseMatrix() const { return mInv; }
+
+    bool operator<(const Transform& t2) const
+    {
+        for (int i = 0; i < 4; ++i)
+            for (int j = 0; j < 4; ++j) {
+                if (m.m[i][j] < t2.m.m[i][j]) return true;
+                if (m.m[i][j] > t2.m.m[i][j]) return false;
+            }
+        return false;
+    }
+
     friend Transform Transpose(const Transform& t)
     {
         return Transform(Transpose(t.m), Transpose(t.mInv));
     }
 
+    bool HasScale() const
+    {
+        Float la2 = (*this)(Vector3f(1, 0, 0)).LengthSquard();
+        Float lb2 = (*this)(Vector3f(0, 1, 0)).LengthSquard();
+        Float lc2 = (*this)(Vector3f(0, 0, 1)).LengthSquard();
+#define NOT_ONE(x) ((x) < 0.999f || (x) > 1.001f)
+        return (NOT_ONE(la2) || NOT_ONE(lb2) || NOT_ONE(lc2));
+#undef NOT_ONE
+    }
+
     Transform Translate(const Vector3f& delta);
 
     Transform Scale(Float x, Float y, Float z);
+
+    Transform RotateX(Float theta);
+
+    Transform RotateY(Float theta);
+
+    Transform RotateZ(Float theta);
 
 private:
     //Transform Private Data

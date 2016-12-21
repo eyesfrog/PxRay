@@ -132,3 +132,19 @@ Transform Transform::Scale(Float x, Float y, Float z)
 
     return Transform(m, minv);
 }
+
+Transform Transform::RotateX(Float theta)
+{
+    Float sinTheta = std::sin(Radians(theta));
+    return Transform();
+}
+
+Transform Transform::RotateY(Float theta)
+{
+    return Transform();
+}
+
+Transform Transform::RotateZ(Float theta)
+{
+    return Transform();
+}
