@@ -745,6 +745,10 @@ public:
     T x, y, z;
 };
 
+typedef Normal3<int> Normal3i;
+typedef Normal3<Float> Normal3f;
+
+
 // Ray Declarations
 class Ray {
 public:

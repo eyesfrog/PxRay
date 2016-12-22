@@ -2,7 +2,7 @@
 // Created by eyesfrog on 2016-12-19.
 //
 
-#include "Transform.h"
+#include "transform.h"
 
 Matrix4x4::Matrix4x4(Float (* mat)[4])
 {

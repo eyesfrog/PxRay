@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp">
-			<Option target="pbrt"/>
-		</Unit>
-		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.h">
-			<Option target="pbrt"/>
-		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp">
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.h">
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h">
@@ -101,6 +101,12 @@
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.h">
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/main/pbrt.cpp">

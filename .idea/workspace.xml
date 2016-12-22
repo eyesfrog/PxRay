@@ -12,9 +12,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddf9e322-e597-4528-a27d-936123ac5fab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/interaction.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/interaction.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/core/Transform.cpp" afterPath="$PROJECT_DIR$/src/core/transform.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/core/Transform.h" afterPath="$PROJECT_DIR$/src/core/transform.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Transform.cpp" afterPath="$PROJECT_DIR$/src/core/Transform.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Transform.h" afterPath="$PROJECT_DIR$/src/core/Transform.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pbrt.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/pbrt.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/pbrt.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/geometry.h" afterPath="$PROJECT_DIR$/src/core/geometry.h" />
     </list>
     <ignored path="pbrt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,12 +60,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transform.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Transform.cpp">
+      <file leaf-file-name="transform.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/transform.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="924">
               <caret line="255" column="16" lean-forward="false" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="16" />
-              <folding />
+              <folding>
+                <marker date="1482359439000" expanded="true" signature="108:151" ph="{...}" />
+                <marker date="1482359439000" expanded="true" signature="413:720" ph="{...}" />
+                <marker date="1482359439000" expanded="true" signature="763:1043" ph="{...}" />
+                <marker date="1482359439000" expanded="true" signature="6812:7372" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +78,7 @@
       <file leaf-file-name="pbrt.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/pbrt.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
+            <state relative-caret-position="1743">
               <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="e#97#113#0" expanded="true" />
@@ -83,45 +104,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transform.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/core/Transform.h">
+      <file leaf-file-name="transform.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/transform.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+            <state relative-caret-position="798">
+              <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
                 <element signature="e#96#113#0" expanded="true" />
-                <element signature="e#157#1849#1" expanded="false" />
-                <element signature="e#180#436#0" expanded="false" />
-                <element signature="e#812#1275#0" expanded="false" />
-                <element signature="e#1281#1537#0" expanded="false" />
-                <element signature="e#1543#1799#0" expanded="false" />
-                <element signature="e#1934#2271#0" expanded="false" />
-                <element signature="e#2422#2517#0" expanded="false" />
-                <element signature="e#2523#2619#0" expanded="false" />
-                <element signature="e#2625#2721#0" expanded="false" />
-                <element signature="e#2727#3177#0" expanded="false" />
-                <element signature="e#3301#3587#0" expanded="false" />
-                <element signature="e#3593#3712#0" expanded="false" />
                 <element signature="e#3718#4071#0" expanded="false" />
                 <element signature="e#5903#5915#0" expanded="true" />
-                <element signature="e#5894#6425#0" expanded="false" />
                 <element signature="e#6436#6448#0" expanded="true" />
-                <element signature="e#6427#6760#0" expanded="false" />
                 <element signature="e#6771#6783#0" expanded="true" />
-                <element signature="e#6762#7122#0" expanded="false" />
-                <element signature="e#7124#7587#0" expanded="false" />
-                <element signature="e#7589#8001#0" expanded="false" />
                 <element signature="e#8012#8024#0" expanded="true" />
-                <element signature="e#8003#9174#0" expanded="false" />
                 <element signature="e#9185#9197#0" expanded="true" />
-                <element signature="e#9176#10820#0" expanded="false" />
                 <element signature="e#10831#10843#0" expanded="true" />
-                <element signature="e#10822#11667#0" expanded="false" />
                 <element signature="e#11678#11690#0" expanded="true" />
-                <element signature="e#11669#13054#0" expanded="false" />
-                <element signature="e#13056#13517#0" expanded="false" />
-                <element signature="e#13519#14100#0" expanded="false" />
+                <marker date="1482356974000" expanded="false" signature="174:1849" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="227:436" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="879:1275" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="1328:1537" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="1590:1799" ph="{...}" />
+                <marker date="1482356974000" expanded="true" signature="1868:5834" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="1971:2271" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="2471:2517" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="2569:2619" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="2671:2721" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="2755:3177" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="3347:3587" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="3644:3712" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="5981:6425" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="6516:6760" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="6851:7122" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="7177:7587" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="7666:8001" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="8149:9174" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="9391:10820" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="10973:11667" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="11886:13054" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="13178:13517" ph="{...}" />
+                <marker date="1482356974000" expanded="false" signature="13732:14100" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interaction.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/interaction.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geometry.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2893">
+              <caret line="732" column="46" lean-forward="true" selection-start-line="732" selection-start-column="46" selection-end-line="732" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interaction.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/interaction.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding>
+                <element signature="e#100#117#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,10 +204,11 @@
         <option value="$PROJECT_DIR$/src/main/pbrt.cpp" />
         <option value="$PROJECT_DIR$/src/core/transform.cpp" />
         <option value="$PROJECT_DIR$/src/core/transform.h" />
-        <option value="$PROJECT_DIR$/src/core/geometry.h" />
         <option value="$PROJECT_DIR$/src/core/pbrt.h" />
         <option value="$PROJECT_DIR$/src/core/Transform.h" />
         <option value="$PROJECT_DIR$/src/core/Transform.cpp" />
+        <option value="$PROJECT_DIR$/src/core/geometry.h" />
+        <option value="$PROJECT_DIR$/src/core/interaction.h" />
       </list>
     </option>
   </component>
@@ -471,7 +526,7 @@
       <workItem from="1482126709315" duration="21000" />
       <workItem from="1482149291198" duration="11656000" />
       <workItem from="1482292948146" duration="5611000" />
-      <workItem from="1482353383547" duration="3914000" />
+      <workItem from="1482353383547" duration="6071000" />
     </task>
     <task id="LOCAL-00001" summary="add Vectors">
       <created>1464368807289</created>
@@ -557,21 +612,28 @@
       <option name="project" value="LOCAL" />
       <updated>1482356781025</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="complete class Transform">
+      <created>1482357470628</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1482357470628</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42504000" />
+    <option name="totallyTimeSpent" value="44661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25065824" sideWeight="0.43548387" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32673267" sideWeight="0.49815693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32673267" sideWeight="0.5018431" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31188118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -607,7 +669,8 @@
     <MESSAGE value="pbrt v3" />
     <MESSAGE value="pbrt v3 (add template)" />
     <MESSAGE value="add class Transform" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class Transform" />
+    <MESSAGE value="complete class Transform" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete class Transform" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -616,28 +679,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/scene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/geometry.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4788">
-          <caret line="228" column="28" lean-forward="false" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/pbrt.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -986,25 +1027,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11296">
-          <caret line="1415" column="11" lean-forward="false" selection-start-line="1415" selection-start-column="11" selection-end-line="1415" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Transform.cpp">
+    <entry file="file://$PROJECT_DIR$/src/core/transform.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="255" column="16" lean-forward="false" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="16" />
+          <folding>
+            <marker date="1482359439000" expanded="true" signature="108:151" ph="{...}" />
+            <marker date="1482359439000" expanded="true" signature="413:720" ph="{...}" />
+            <marker date="1482359439000" expanded="true" signature="763:1043" ph="{...}" />
+            <marker date="1482359439000" expanded="true" signature="6812:7372" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/transform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#96#113#0" expanded="true" />
+            <element signature="e#3718#4071#0" expanded="false" />
+            <element signature="e#5903#5915#0" expanded="true" />
+            <element signature="e#6436#6448#0" expanded="true" />
+            <element signature="e#6771#6783#0" expanded="true" />
+            <element signature="e#8012#8024#0" expanded="true" />
+            <element signature="e#9185#9197#0" expanded="true" />
+            <element signature="e#10831#10843#0" expanded="true" />
+            <element signature="e#11678#11690#0" expanded="true" />
+            <marker date="1482356974000" expanded="false" signature="174:1849" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="227:436" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="879:1275" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="1328:1537" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="1590:1799" ph="{...}" />
+            <marker date="1482356974000" expanded="true" signature="1868:5834" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="1971:2271" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="2471:2517" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="2569:2619" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="2671:2721" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="2755:3177" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="3347:3587" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="3644:3712" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="5981:6425" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="6516:6760" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="6851:7122" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="7177:7587" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="7666:8001" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="8149:9174" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="9391:10820" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="10973:11667" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="11886:13054" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="13178:13517" ph="{...}" />
+            <marker date="1482356974000" expanded="false" signature="13732:14100" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/interaction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/pbrt.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
+        <state relative-caret-position="1743">
           <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="e#97#113#0" expanded="true" />
@@ -1029,44 +1118,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Transform.h">
+    <entry file="file://$PROJECT_DIR$/src/core/geometry.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+        <state relative-caret-position="2893">
+          <caret line="732" column="46" lean-forward="true" selection-start-line="732" selection-start-column="46" selection-end-line="732" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/interaction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#96#113#0" expanded="true" />
-            <element signature="e#157#1849#1" expanded="false" />
-            <element signature="e#180#436#0" expanded="false" />
-            <element signature="e#812#1275#0" expanded="false" />
-            <element signature="e#1281#1537#0" expanded="false" />
-            <element signature="e#1543#1799#0" expanded="false" />
-            <element signature="e#1934#2271#0" expanded="false" />
-            <element signature="e#2422#2517#0" expanded="false" />
-            <element signature="e#2523#2619#0" expanded="false" />
-            <element signature="e#2625#2721#0" expanded="false" />
-            <element signature="e#2727#3177#0" expanded="false" />
-            <element signature="e#3301#3587#0" expanded="false" />
-            <element signature="e#3593#3712#0" expanded="false" />
-            <element signature="e#3718#4071#0" expanded="false" />
-            <element signature="e#5903#5915#0" expanded="true" />
-            <element signature="e#5894#6425#0" expanded="false" />
-            <element signature="e#6436#6448#0" expanded="true" />
-            <element signature="e#6427#6760#0" expanded="false" />
-            <element signature="e#6771#6783#0" expanded="true" />
-            <element signature="e#6762#7122#0" expanded="false" />
-            <element signature="e#7124#7587#0" expanded="false" />
-            <element signature="e#7589#8001#0" expanded="false" />
-            <element signature="e#8012#8024#0" expanded="true" />
-            <element signature="e#8003#9174#0" expanded="false" />
-            <element signature="e#9185#9197#0" expanded="true" />
-            <element signature="e#9176#10820#0" expanded="false" />
-            <element signature="e#10831#10843#0" expanded="true" />
-            <element signature="e#10822#11667#0" expanded="false" />
-            <element signature="e#11678#11690#0" expanded="true" />
-            <element signature="e#11669#13054#0" expanded="false" />
-            <element signature="e#13056#13517#0" expanded="false" />
-            <element signature="e#13519#14100#0" expanded="false" />
+            <element signature="e#100#117#0" expanded="true" />
           </folding>
         </state>
       </provider>

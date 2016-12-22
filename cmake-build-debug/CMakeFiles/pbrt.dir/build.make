@@ -129,28 +129,52 @@ CMakeFiles/pbrt.dir/src/core/geometry.cpp.o.provides: CMakeFiles/pbrt.dir/src/co
 CMakeFiles/pbrt.dir/src/core/geometry.cpp.o.provides.build: CMakeFiles/pbrt.dir/src/core/geometry.cpp.o
 
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.o: CMakeFiles/pbrt.dir/flags.make
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.o: ../src/core/Transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pbrt.dir/src/core/Transform.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pbrt.dir/src/core/Transform.cpp.o -c /Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp
+CMakeFiles/pbrt.dir/src/core/transform.cpp.o: CMakeFiles/pbrt.dir/flags.make
+CMakeFiles/pbrt.dir/src/core/transform.cpp.o: ../src/core/transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pbrt.dir/src/core/transform.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pbrt.dir/src/core/transform.cpp.o -c /Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrt.dir/src/core/Transform.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp > CMakeFiles/pbrt.dir/src/core/Transform.cpp.i
+CMakeFiles/pbrt.dir/src/core/transform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrt.dir/src/core/transform.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp > CMakeFiles/pbrt.dir/src/core/transform.cpp.i
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrt.dir/src/core/Transform.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp -o CMakeFiles/pbrt.dir/src/core/Transform.cpp.s
+CMakeFiles/pbrt.dir/src/core/transform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrt.dir/src/core/transform.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp -o CMakeFiles/pbrt.dir/src/core/transform.cpp.s
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.requires:
+CMakeFiles/pbrt.dir/src/core/transform.cpp.o.requires:
 
-.PHONY : CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.requires
+.PHONY : CMakeFiles/pbrt.dir/src/core/transform.cpp.o.requires
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.provides: CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.provides.build
-.PHONY : CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.provides
+CMakeFiles/pbrt.dir/src/core/transform.cpp.o.provides: CMakeFiles/pbrt.dir/src/core/transform.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/transform.cpp.o.provides.build
+.PHONY : CMakeFiles/pbrt.dir/src/core/transform.cpp.o.provides
 
-CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.provides.build: CMakeFiles/pbrt.dir/src/core/Transform.cpp.o
+CMakeFiles/pbrt.dir/src/core/transform.cpp.o.provides.build: CMakeFiles/pbrt.dir/src/core/transform.cpp.o
+
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.o: CMakeFiles/pbrt.dir/flags.make
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.o: ../src/core/interaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pbrt.dir/src/core/interaction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pbrt.dir/src/core/interaction.cpp.o -c /Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrt.dir/src/core/interaction.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp > CMakeFiles/pbrt.dir/src/core/interaction.cpp.i
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrt.dir/src/core/interaction.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp -o CMakeFiles/pbrt.dir/src/core/interaction.cpp.s
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.requires:
+
+.PHONY : CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.requires
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.provides: CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.provides.build
+.PHONY : CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.provides
+
+CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.provides.build: CMakeFiles/pbrt.dir/src/core/interaction.cpp.o
 
 
 # Object files for target pbrt
@@ -158,7 +182,8 @@ pbrt_OBJECTS = \
 "CMakeFiles/pbrt.dir/src/main/pbrt.cpp.o" \
 "CMakeFiles/pbrt.dir/src/core/scene.cpp.o" \
 "CMakeFiles/pbrt.dir/src/core/geometry.cpp.o" \
-"CMakeFiles/pbrt.dir/src/core/Transform.cpp.o"
+"CMakeFiles/pbrt.dir/src/core/transform.cpp.o" \
+"CMakeFiles/pbrt.dir/src/core/interaction.cpp.o"
 
 # External object files for target pbrt
 pbrt_EXTERNAL_OBJECTS =
@@ -166,10 +191,11 @@ pbrt_EXTERNAL_OBJECTS =
 pbrt: CMakeFiles/pbrt.dir/src/main/pbrt.cpp.o
 pbrt: CMakeFiles/pbrt.dir/src/core/scene.cpp.o
 pbrt: CMakeFiles/pbrt.dir/src/core/geometry.cpp.o
-pbrt: CMakeFiles/pbrt.dir/src/core/Transform.cpp.o
+pbrt: CMakeFiles/pbrt.dir/src/core/transform.cpp.o
+pbrt: CMakeFiles/pbrt.dir/src/core/interaction.cpp.o
 pbrt: CMakeFiles/pbrt.dir/build.make
 pbrt: CMakeFiles/pbrt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable pbrt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable pbrt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pbrt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -180,7 +206,8 @@ CMakeFiles/pbrt.dir/build: pbrt
 CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/main/pbrt.cpp.o.requires
 CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/core/scene.cpp.o.requires
 CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/core/geometry.cpp.o.requires
-CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/core/Transform.cpp.o.requires
+CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/core/transform.cpp.o.requires
+CMakeFiles/pbrt.dir/requires: CMakeFiles/pbrt.dir/src/core/interaction.cpp.o.requires
 
 .PHONY : CMakeFiles/pbrt.dir/requires
 

@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.cpp
-Transform.h
-/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.h
-
-/Users/eyesfrog/ClionProjects/pbrt/src/core/Transform.h
-pbrt.h
-/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
-geometry.h
-/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
-iostream
--
-
 /Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp
 geometry.h
 /Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
@@ -25,6 +13,18 @@ geometry.h
 /Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
 pbrt.h
 /Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp
+interaction.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.h
+pbrt.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
+geometry.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
+transform.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.h
 
 /Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
 cmath
@@ -57,6 +57,18 @@ scene.h
 /Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h
 
 /Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp
+transform.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.h
+
+/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.h
+pbrt.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/pbrt.h
+geometry.h
+/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.h
+iostream
+-
 
 /Users/eyesfrog/ClionProjects/pbrt/src/main/pbrt.cpp
 iostream

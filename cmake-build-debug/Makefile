@@ -123,33 +123,6 @@ pbrt/fast:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/build
 .PHONY : pbrt/fast
 
-src/core/Transform.o: src/core/Transform.cpp.o
-
-.PHONY : src/core/Transform.o
-
-# target to build an object file
-src/core/Transform.cpp.o:
-	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.o
-.PHONY : src/core/Transform.cpp.o
-
-src/core/Transform.i: src/core/Transform.cpp.i
-
-.PHONY : src/core/Transform.i
-
-# target to preprocess a source file
-src/core/Transform.cpp.i:
-	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.i
-.PHONY : src/core/Transform.cpp.i
-
-src/core/Transform.s: src/core/Transform.cpp.s
-
-.PHONY : src/core/Transform.s
-
-# target to generate assembly for a file
-src/core/Transform.cpp.s:
-	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/Transform.cpp.s
-.PHONY : src/core/Transform.cpp.s
-
 src/core/geometry.o: src/core/geometry.cpp.o
 
 .PHONY : src/core/geometry.o
@@ -177,6 +150,33 @@ src/core/geometry.cpp.s:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/geometry.cpp.s
 .PHONY : src/core/geometry.cpp.s
 
+src/core/interaction.o: src/core/interaction.cpp.o
+
+.PHONY : src/core/interaction.o
+
+# target to build an object file
+src/core/interaction.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/interaction.cpp.o
+.PHONY : src/core/interaction.cpp.o
+
+src/core/interaction.i: src/core/interaction.cpp.i
+
+.PHONY : src/core/interaction.i
+
+# target to preprocess a source file
+src/core/interaction.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/interaction.cpp.i
+.PHONY : src/core/interaction.cpp.i
+
+src/core/interaction.s: src/core/interaction.cpp.s
+
+.PHONY : src/core/interaction.s
+
+# target to generate assembly for a file
+src/core/interaction.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/interaction.cpp.s
+.PHONY : src/core/interaction.cpp.s
+
 src/core/scene.o: src/core/scene.cpp.o
 
 .PHONY : src/core/scene.o
@@ -203,6 +203,33 @@ src/core/scene.s: src/core/scene.cpp.s
 src/core/scene.cpp.s:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/scene.cpp.s
 .PHONY : src/core/scene.cpp.s
+
+src/core/transform.o: src/core/transform.cpp.o
+
+.PHONY : src/core/transform.o
+
+# target to build an object file
+src/core/transform.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/transform.cpp.o
+.PHONY : src/core/transform.cpp.o
+
+src/core/transform.i: src/core/transform.cpp.i
+
+.PHONY : src/core/transform.i
+
+# target to preprocess a source file
+src/core/transform.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/transform.cpp.i
+.PHONY : src/core/transform.cpp.i
+
+src/core/transform.s: src/core/transform.cpp.s
+
+.PHONY : src/core/transform.s
+
+# target to generate assembly for a file
+src/core/transform.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/transform.cpp.s
+.PHONY : src/core/transform.cpp.s
 
 src/main/pbrt.o: src/main/pbrt.cpp.o
 
@@ -240,15 +267,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pbrt"
-	@echo "... src/core/Transform.o"
-	@echo "... src/core/Transform.i"
-	@echo "... src/core/Transform.s"
 	@echo "... src/core/geometry.o"
 	@echo "... src/core/geometry.i"
 	@echo "... src/core/geometry.s"
+	@echo "... src/core/interaction.o"
+	@echo "... src/core/interaction.i"
+	@echo "... src/core/interaction.s"
 	@echo "... src/core/scene.o"
 	@echo "... src/core/scene.i"
 	@echo "... src/core/scene.s"
+	@echo "... src/core/transform.o"
+	@echo "... src/core/transform.i"
+	@echo "... src/core/transform.s"
 	@echo "... src/main/pbrt.o"
 	@echo "... src/main/pbrt.i"
 	@echo "... src/main/pbrt.s"
