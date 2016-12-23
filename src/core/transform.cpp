@@ -3,6 +3,7 @@
 //
 
 #include "transform.h"
+#include "interaction.h"
 
 Matrix4x4::Matrix4x4(Float (* mat)[4])
 {
@@ -254,4 +255,12 @@ bool Transform::SwapsHandedness() const
             m.m[0][1] * (m.m[1][0] * m.m[2][2] - m.m[1][2] * m.m[2][0]) +
             m.m[0][2] * (m.m[1][0] * m.m[2][1] - m.m[1][1] * m.m[2][0]);
     return det<0;
+}
+
+SurfaceInteraction Transform::operator()(const SurfaceInteraction& si) const
+{
+    SurfaceInteraction ret;
+    //Transform p and pError in SurfaceInteraction
+    //Transform remaining members of SurfaceInteraction
+    return ret;
 }
