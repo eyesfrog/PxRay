@@ -278,7 +278,7 @@ inline Point3<T> Transform::operator()(const Point3<T> &p,
                  std::abs(m.m[1][2] * z) + std::abs(m.m[1][3]));
     T zAbsSum = (std::abs(m.m[2][0] * x) + std::abs(m.m[2][1] * y) +
                  std::abs(m.m[2][2] * z) + std::abs(m.m[2][3]));
-    *pError = Float(gamma(3)) * Vector3<T>(xAbsSum, yAbsSum, zAbsSum);
+    *pError = gamma(3) * Vector3<T>(xAbsSum, yAbsSum, zAbsSum);
     assert(wp != 0);
     if (wp == 1)
         return Point3<T>(xp, yp, zp);

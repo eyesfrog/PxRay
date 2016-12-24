@@ -24,61 +24,107 @@
 
 // Global Forward Declarations
 class Scene;
+
 class Integrator;
+
 class SamplerIntegrator;
+
 template <typename T>
 class Vector2;
+
 template <typename T>
 class Vector3;
+
 template <typename T>
 class Point3;
+
 template <typename T>
 class Point2;
+
 template <typename T>
 class Normal3;
+
 class Ray;
+
 class RayDifferential;
+
 template <typename T>
 class Bounds2;
+
 template <typename T>
 class Bounds3;
+
 class Transform;
+
 struct Interaction;
+
 class SurfaceInteraction;
+
 class Shape;
+
 class Primitive;
+
 class GeometricPrimitive;
+
 template <int nSpectrumSamples>
 class CoefficientSpectrum;
+
 class RGBSpectrum;
+
 class SampledSpectrum;
+
 typedef RGBSpectrum Spectrum;
+
 // typedef SampledSpectrum Spectrum;
 class Camera;
+
 struct CameraSample;
+
 class ProjectiveCamera;
+
 class Sampler;
+
 class Filter;
+
 class Film;
+
 class FilmTile;
+
 class BxDF;
+
 class BRDF;
+
 class BTDF;
+
 class BSDF;
+
 class Material;
+
 template <typename T>
 class Texture;
+
 class Medium;
+
 class MediumInteraction;
+
 struct MediumInterface;
+
 class BSSRDF;
+
 class SeparableBSSRDF;
+
 class TabulatedBSSRDF;
+
 struct BSSRDFTable;
+
 class Light;
+
 class VisibilityTester;
+
 class AreaLight;
+
 struct Distribution1D;
+
 class Distribution2D;
 
 #ifdef PBRT_FLOAT_AS_DOUBLE
@@ -88,12 +134,18 @@ typedef float Float;
 #endif  // PBRT_FLOAT_AS_DOUBLE
 
 class RNG;
+
 class ProgressReporter;
+
 class MemoryArena;
+
 template <typename T, int logBlockSize = 2>
 class BlockedArray;
+
 struct Matrix4x4;
+
 class ParamSet;
+
 template <typename T>
 struct ParamSetItem;
 struct Options {
@@ -105,8 +157,8 @@ struct Options {
 };
 
 extern Options PbrtOptions;
-class TextureParams;
 
+class TextureParams;
 
 // Global Constants
 static constexpr Float MaxFloat = std::numeric_limits<Float>::max();
@@ -120,7 +172,6 @@ static constexpr Float Inv4Pi = 0.07957747154594766788;
 static constexpr Float PiOver2 = 1.57079632679489661923;
 static constexpr Float PiOver4 = 0.78539816339744830961;
 static constexpr Float Sqrt2 = 1.41421356237309504880;
-
 
 template <typename T>
 class Vector2;
@@ -148,5 +199,43 @@ inline Float Lerp(Float t, Float v1, Float v2)
 
 inline Float Radians(Float deg) { return (Pi / 180) * deg; }
 
+inline constexpr Float gamma(int n)
+{
+    return (n * MachineEpsilon) / (1 - n * MachineEpsilon);
+}
+
+template <typename T, typename U, typename V>
+inline T Clamp(T val, U low, V high)
+{
+    if (val < low)
+        return low;
+    else if (val > high)
+        return high;
+    else
+        return val;
+}
+
+inline bool Quadratic(Float a, Float b, Float c, Float* t0, Float* t1)
+{
+    //Find quadratic discriminant
+    double discrim = (double) b * (double) b - 4 * (double) a * (double) c;
+    if (discrim < 0)
+        return false;
+    double rootDiscrim = std::sqrt(discrim);
+    //Compute quadratic t values
+    double q;
+    if (b < 0)
+        q = -0.5 * (b - rootDiscrim);
+    else
+        q = -0.5 * (b + rootDiscrim);
+
+    *t0 = q / a;
+    *t1 = c / q;
+
+    if (*t0 > *t1)
+        std::swap(*t0, *t1);
+
+    return true;
+}
 
 #endif //PBRT_PBRT_H

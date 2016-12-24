@@ -5,6 +5,7 @@
 #ifndef PBRT_SHAPE_H
 #define PBRT_SHAPE_H
 
+#include "pbrt.h"
 #include "transform.h"
 #include "interaction.h"
 
@@ -29,6 +30,7 @@ public:
         SurfaceInteraction isect;
         return Intersect(ray, &tHit, &isect, testAlphaTexture);
     }
+
     virtual Float Area() const = 0;
     virtual Interaction Sample(const Point2f &u) const = 0;
     virtual Float Pdf(const Interaction &) const { return 1/Area(); }

@@ -285,6 +285,33 @@ src/main/pbrt.cpp.s:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/main/pbrt.cpp.s
 .PHONY : src/main/pbrt.cpp.s
 
+src/shapes/sphere.o: src/shapes/sphere.cpp.o
+
+.PHONY : src/shapes/sphere.o
+
+# target to build an object file
+src/shapes/sphere.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/shapes/sphere.cpp.o
+.PHONY : src/shapes/sphere.cpp.o
+
+src/shapes/sphere.i: src/shapes/sphere.cpp.i
+
+.PHONY : src/shapes/sphere.i
+
+# target to preprocess a source file
+src/shapes/sphere.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/shapes/sphere.cpp.i
+.PHONY : src/shapes/sphere.cpp.i
+
+src/shapes/sphere.s: src/shapes/sphere.cpp.s
+
+.PHONY : src/shapes/sphere.s
+
+# target to generate assembly for a file
+src/shapes/sphere.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/shapes/sphere.cpp.s
+.PHONY : src/shapes/sphere.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... src/main/pbrt.o"
 	@echo "... src/main/pbrt.i"
 	@echo "... src/main/pbrt.s"
+	@echo "... src/shapes/sphere.o"
+	@echo "... src/shapes/sphere.i"
+	@echo "... src/shapes/sphere.s"
 .PHONY : help
 
 

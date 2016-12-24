@@ -118,6 +118,12 @@
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/main/pbrt.cpp">
 			<Option target="pbrt"/>
 		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/shapes/sphere.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/shapes/sphere.h">
+			<Option target="pbrt"/>
+		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
