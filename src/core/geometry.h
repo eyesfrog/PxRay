@@ -748,7 +748,6 @@ public:
 typedef Normal3<int> Normal3i;
 typedef Normal3<Float> Normal3f;
 
-
 // Ray Declarations
 class Ray {
 public:
@@ -984,6 +983,10 @@ public:
         *center = (pMin + pMax) / 2;
         *radius = Inside(*center, *this) ? Distance(*center, pMax) : 0;
     }
+
+    inline bool IntersectP(const Ray& ray, Float* hitt0 = nullptr, Float* hitt1 = nullptr) const;
+
+    inline bool IntersectP(const Ray& ray, const Vector3f& invDir, const int dirIsNeg[3]) const;
 
     //Bounds3 Public Data
     Point3<T> pMin, pMax;
@@ -1470,5 +1473,66 @@ inline Bounds3<T> Expand(const Bounds3<T>& b, U delta)
     return Bounds3<T>(b.pMin - Vector3<T>(delta, delta, delta),
                       b.pMax + Vector3<T>(delta, delta, delta));
 };
+
+template <typename T>
+inline bool Bounds3<T>::IntersectP(const Ray& ray, Float* hitt0,
+                                   Float* hitt1) const
+{
+    Float t0 = 0, t1 = ray.tMax;
+    for (int i = 0; i < 3; ++i) {
+        //Update interval for ith bounding box slab
+        Float invRayDir = 1 / ray.d[i];
+        Float tNear = (pMin[i] - ray.o[i]) * invRayDir;
+        Float tFar = (pMax[i] - ray.o[i]) * invRayDir;
+        //Update parametric interval from slab intersection t values
+        if (tNear > tFar)
+            std::swap(tNear, tFar);
+        //Update tFar to ensure robust ray-bounds intersection
+        t0 = tNear > t0 ? tNear : t0;
+        t1 = tFar < t1 ? tFar : t1;
+        if (t0 > t1)
+            return false;
+    }
+    if (hitt0)
+        *hitt0 = t0;
+    if (hitt1)
+        *hitt1 = t1;
+
+    return true;
+}
+
+template <typename T>
+inline bool Bounds3<T>::IntersectP(const Ray& ray, const Vector3f& invDir, const int dirIsNeg[3]) const
+{
+    const Bounds3f& bounds = *this;
+    //Check for ray intersection against x and y slabs
+    Float tMin = (bounds[dirIsNeg[0]].x - ray.o.x) * invDir.x;
+    Float tMax = (bounds[1 - dirIsNeg[0]].x - ray.o.x) * invDir.x;
+    Float tyMin = (bounds[dirIsNeg[1]].y - ray.o.y) * invDir.y;
+    Float tyMax = (bounds[1 - dirIsNeg[1]].y - ray.o.y) * invDir.y;
+    //Update tMax and tyMax to ensure robust bounds intersection
+    tMax *= 1 + 2 * gamma(3);
+    tyMax *= 1 + 2 * gamma(3);
+    if (tMin > tyMax || tyMin > tMax)
+        return false;
+    if (tyMin > tMin)
+        tMin = tyMin;
+    if (tyMax < tMax)
+        tMax = tyMax;
+
+    //Check for ray intersection against z slab
+    Float tzMin = (bounds[dirIsNeg[2]].z - ray.o.z) * invDir.z;
+    Float tzMax = (bounds[1 - dirIsNeg[2]].z - ray.o.z) * invDir.z;
+
+    tzMax *= 1 + 2 * gamma(3);
+    if (tMin > tzMax || tzMin > tMax)
+        return false;
+    if (tzMin > tMin)
+        tMin = tzMin;
+    if (tzMax < tMax)
+        tMax = tzMax;
+
+    return (tMin < ray.tMax) && (tMax > 0);
+}
 
 #endif //PBRT_GEOMETRY_H

@@ -103,6 +103,12 @@
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.h">
 			<Option target="pbrt"/>
 		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/shape.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/shape.h">
+			<Option target="pbrt"/>
+		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp">
 			<Option target="pbrt"/>
 		</Unit>

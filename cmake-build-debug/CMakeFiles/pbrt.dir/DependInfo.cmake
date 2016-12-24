@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/core/geometry.cpp.o"
   "/Users/eyesfrog/ClionProjects/pbrt/src/core/interaction.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/core/interaction.cpp.o"
   "/Users/eyesfrog/ClionProjects/pbrt/src/core/scene.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/core/scene.cpp.o"
+  "/Users/eyesfrog/ClionProjects/pbrt/src/core/shape.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/core/shape.cpp.o"
   "/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/core/transform.cpp.o"
   "/Users/eyesfrog/ClionProjects/pbrt/src/main/pbrt.cpp" "/Users/eyesfrog/ClionProjects/pbrt/cmake-build-debug/CMakeFiles/pbrt.dir/src/main/pbrt.cpp.o"
   )

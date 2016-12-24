@@ -204,6 +204,33 @@ src/core/scene.cpp.s:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/scene.cpp.s
 .PHONY : src/core/scene.cpp.s
 
+src/core/shape.o: src/core/shape.cpp.o
+
+.PHONY : src/core/shape.o
+
+# target to build an object file
+src/core/shape.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/shape.cpp.o
+.PHONY : src/core/shape.cpp.o
+
+src/core/shape.i: src/core/shape.cpp.i
+
+.PHONY : src/core/shape.i
+
+# target to preprocess a source file
+src/core/shape.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/shape.cpp.i
+.PHONY : src/core/shape.cpp.i
+
+src/core/shape.s: src/core/shape.cpp.s
+
+.PHONY : src/core/shape.s
+
+# target to generate assembly for a file
+src/core/shape.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/shape.cpp.s
+.PHONY : src/core/shape.cpp.s
+
 src/core/transform.o: src/core/transform.cpp.o
 
 .PHONY : src/core/transform.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/core/scene.o"
 	@echo "... src/core/scene.i"
 	@echo "... src/core/scene.s"
+	@echo "... src/core/shape.o"
+	@echo "... src/core/shape.i"
+	@echo "... src/core/shape.s"
 	@echo "... src/core/transform.o"
 	@echo "... src/core/transform.i"
 	@echo "... src/core/transform.s"
