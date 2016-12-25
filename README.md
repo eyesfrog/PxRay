@@ -1,8 +1,8 @@
-# TinyRay
+# PxRay
 A physically based ray tracer in C++ on OSX.
 
 ## Introduce
-The realistic ray tracer TinyRay is simple and crude.
+The realistic ray tracer PxRay is simple and crude.
 It just has some basic functions and features such as BRDFs, Samplers, Cameras, Objects, Lights, etc.
 
 More advanced functions and features are to be added.
