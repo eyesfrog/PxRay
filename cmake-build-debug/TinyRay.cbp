@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TinyRay"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TinyRay">
+				<Option output="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/TinyRay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 TinyRay"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TinyRay/fast">
+				<Option output="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/TinyRay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 TinyRay/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eyesfrog/ClionProjects/TinyRay/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/BRDF.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/BRDF.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/GlossySpecular.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/GlossySpecular.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/Lambertian.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/Lambertian.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/PerfectSpecular.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/BRDF/PerfectSpecular.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Build/Build.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Camera.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Camera.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Fisheye.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Fisheye.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Pinhole.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Camera/Pinhole.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/GeometricObject.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/GeometricObject.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Plane.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Plane.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Rectangle.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Rectangle.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Sphere.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/GeometricObjects/Sphere.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Ambient.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Ambient.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/AreaLight.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/AreaLight.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Directional.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Directional.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Light.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/Light.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/PointLight.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Lights/PointLight.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Emissive.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Emissive.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Material.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Material.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Matte.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Matte.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Phong.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Phong.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Reflective.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Materials/Reflective.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/MultiJittered.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/MultiJittered.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/Regular.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/Regular.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/Sampler.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Sampler/Sampler.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/AreaLighting.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/AreaLighting.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/MultipleObjects.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/MultipleObjects.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/RayCast.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/RayCast.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/SingleSphere.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/SingleSphere.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/Tracer.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/Tracer.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/Whitted.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Tracer/Whitted.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/BBox.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/BBox.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Constants.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Math.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Math.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Matrix.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Matrix.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Normal.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Normal.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Point2D.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Point2D.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Point3D.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Point3D.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/RGBColor.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/RGBColor.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Ray.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Ray.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/ShadeRec.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/ShadeRec.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Vector3D.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/Utilities/Vector3D.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/World/ViewPlane.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/World/ViewPlane.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/World/World.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/World/World.h">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/src/main.cpp">
+			<Option target="TinyRay"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/TinyRay/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
