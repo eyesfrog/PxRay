@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pbrt.dir/src/core/interaction.cpp.o"
   "CMakeFiles/pbrt.dir/src/core/shape.cpp.o"
   "CMakeFiles/pbrt.dir/src/shapes/sphere.cpp.o"
+  "CMakeFiles/pbrt.dir/src/core/efloat.cpp.o"
   "pbrt.pdb"
   "pbrt"
 )

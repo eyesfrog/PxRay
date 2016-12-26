@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/efloat.cpp">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/efloat.h">
+			<Option target="pbrt"/>
+		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/geometry.cpp">
 			<Option target="pbrt"/>
 		</Unit>
@@ -107,6 +113,9 @@
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/shape.h">
+			<Option target="pbrt"/>
+		</Unit>
+		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/stringprint.h">
 			<Option target="pbrt"/>
 		</Unit>
 		<Unit filename="/Users/eyesfrog/ClionProjects/pbrt/src/core/transform.cpp">

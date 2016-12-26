@@ -123,6 +123,33 @@ pbrt/fast:
 	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/build
 .PHONY : pbrt/fast
 
+src/core/efloat.o: src/core/efloat.cpp.o
+
+.PHONY : src/core/efloat.o
+
+# target to build an object file
+src/core/efloat.cpp.o:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/efloat.cpp.o
+.PHONY : src/core/efloat.cpp.o
+
+src/core/efloat.i: src/core/efloat.cpp.i
+
+.PHONY : src/core/efloat.i
+
+# target to preprocess a source file
+src/core/efloat.cpp.i:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/efloat.cpp.i
+.PHONY : src/core/efloat.cpp.i
+
+src/core/efloat.s: src/core/efloat.cpp.s
+
+.PHONY : src/core/efloat.s
+
+# target to generate assembly for a file
+src/core/efloat.cpp.s:
+	$(MAKE) -f CMakeFiles/pbrt.dir/build.make CMakeFiles/pbrt.dir/src/core/efloat.cpp.s
+.PHONY : src/core/efloat.cpp.s
+
 src/core/geometry.o: src/core/geometry.cpp.o
 
 .PHONY : src/core/geometry.o
@@ -321,6 +348,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pbrt"
+	@echo "... src/core/efloat.o"
+	@echo "... src/core/efloat.i"
+	@echo "... src/core/efloat.s"
 	@echo "... src/core/geometry.o"
 	@echo "... src/core/geometry.i"
 	@echo "... src/core/geometry.s"

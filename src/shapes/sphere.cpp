@@ -3,6 +3,7 @@
 //
 
 #include "sphere.h"
+#include "../core/efloat.h"
 
 Bounds3f Sphere::ObjectBound() const
 {
